@@ -1,0 +1,15 @@
+.img-services {
+    gap: 20px; /* Spacing between items */
+}
+
+.relative {
+    width: max-content;
+}
+.service-text {
+    position: relative;
+    bottom: 4rem;
+
+}
+.absolute.inset-0.flex {
+    z-index: 1 !important;  /* Increase z-index to ensure text is on top */
+  }
