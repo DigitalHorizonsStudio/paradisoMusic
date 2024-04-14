@@ -13,7 +13,7 @@ import { useNavigate } from 'react-router-dom';
 export const Services = () => {
   const navigate = useNavigate();
 
-  const handleServiceClick = (title, image, descriptions) => {
+  const handleServiceClick = (title) => {
     // Navigate to the service details page
     navigate(`/services/${title}`, { state: { title} });
   };
