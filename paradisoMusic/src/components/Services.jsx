@@ -13,8 +13,8 @@ import { useNavigate } from 'react-router-dom';
 export const Services = () => {
   const navigate = useNavigate();
 
-  const handleServiceClick = (title, image, descriptions) => {
-    // Navigate to the service details page
+  const handleServiceClick = (title) => {
+
     navigate(`/services/${title}`, { state: { title} });
   };
 
@@ -51,6 +51,7 @@ export const Services = () => {
     </div>
   );
 };
+//Descripciones hardcoded
 
 const ServiceLink = ({ image, title, onClick }) => {
   return (

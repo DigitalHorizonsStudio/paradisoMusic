@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
                 <div className="flex justify-center items-center">
                     <ul className="flex flex-row justify-center">
-                        <li><a href="#"><img src={Facebook} alt="Facebook" className="w-6 h-6 mx-2" /></a></li>
+                        <li><a href="www.instagram.com/paradisoMusic"><img src={Facebook} alt="Facebook" className="w-6 h-6 mx-2" /></a></li>
                         <li><a href="#"><img src={Instagram} alt="Instagram" className="w-6 h-6 mx-2" /></a></li>
                         <li><a href="#"><img src={Linkedin} alt="Linkedin" className="w-6 h-6 mx-2" /></a></li>
                         <li><a href="#"><img src={Youtube} alt="Youtube" className="w-6 h-6 mx-2" /></a></li>
