@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../assets/ParadisoMusicLogo.png';
 import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 
 export const NavbarComponent = () => {
+  // Estado para almacenar el idioma seleccionado
+  const [language, setLanguage] = useState('ENG');
+
+  // Función para cambiar el idioma
+  const changeLanguage = (newLanguage) => {
+    setLanguage(newLanguage);
+  };
+
   return (
     <Navbar variant='dark' expand="lg" style={{ backgroundColor: '#110A0C', color: '#ffffff' }} >
       <Container>
@@ -19,8 +27,8 @@ export const NavbarComponent = () => {
             <Nav.Link as={Link} to="/contactus" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px',  }}>CONTACT US</Nav.Link>
           </Nav>
           <Nav className="ms-auto">
-            <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px',  }}>ESP</Nav.Link>
-            <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px',  }}>ENG</Nav.Link>
+            <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px', backgroundColor: language === 'ENG' ? '#444' : 'transparent', padding: '8px', borderRadius: '4px' }} onClick={() => changeLanguage('ENG')}>ENG {language === 'ENG'}</Nav.Link>
+            <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px', backgroundColor: language === 'ESP' ? '#444' : 'transparent', padding: '8px', borderRadius: '4px' }} onClick={() => changeLanguage('ESP')}>ESP {language === 'ESP'}</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
