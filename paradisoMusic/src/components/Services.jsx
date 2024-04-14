@@ -5,8 +5,8 @@ import lighting from '../assets/lighting.png';
 import liveSound from '../assets/liveSound.png';
 import stage from '../assets/stage.png';
 import video from '../assets/video.png';
-import podcast from '../assets/podcast1.png'
-import setAudio from '../assets/setAudio.png'
+import Recording from '../assets/podcast1.png'
+import Audiovisual from '../assets/setAudio.png'
 
 import { useNavigate } from 'react-router-dom';
 
@@ -23,16 +23,16 @@ export const Services = () => {
       <h1 className="text-3xl sm:text-5xl xl:text-6xl text-black xl:mb-10 xl:mt-10 text-center sm:pt-3 sm:pb-6 font-semibold" style={{ fontFamily: 'Montserrat' }}>Transform your Miami events</h1>
             <div className="w-full">
                 <div className='relative flex justify-center'>
-            <button>
-                <img src={podcast} alt={'podcast'} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem",
+            <button onClick={() => handleServiceClick("Recording")}>
+                <img src={Recording} alt={'Recording'} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem",
                 width: "72rem",
                 objectFit: "cover" }} />
                 <h2 className="absolute inset-0 flex items-center justify-center text-xl font-bold text-center  bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">Audiovisual studios</h2>
             </button>
             </div>
             <div className='relative flex justify-center'>
-            <button >
-            <img src={setAudio} alt={'podcaste'} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem",
+            <button onClick={() => handleServiceClick("Audiovisual")}>
+            <img src={Audiovisual} alt={'Audiovisual'} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem",
                 width: "72rem",
                 objectFit: "cover" }} />
                 <h2 className="absolute inset-0 flex items-center justify-center text-xl font-bold text-center  bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">Recording Studios</h2>
@@ -45,7 +45,7 @@ export const Services = () => {
         <ServiceLink image={enterteinment} title="Entertainment" onClick={() => handleServiceClick("Entertainment")} />
         <ServiceLink image={video} title="Video" onClick={() => handleServiceClick("Video")} />
         <ServiceLink image={lighting} title="Lighting" onClick={() => handleServiceClick("Lighting")} />
-        <ServiceLink image={rental} title="Equipment Rental" onClick={() => handleServiceClick("Equipment Rental")} />
+        <ServiceLink image={rental} title="EquipmentRental" onClick={() => handleServiceClick("EquipmentRental")} />
         <ServiceLink image={liveSound} title="Live Sound" onClick={() => handleServiceClick("Live Sound")} />
       </div>
     </div>
