@@ -51,6 +51,7 @@ export const Services = () => {
     </div>
   );
 };
+//Descripciones hardcoded
 
 const ServiceLink = ({ image, title, onClick }) => {
   return (

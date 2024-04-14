@@ -63,9 +63,8 @@ const descriptions = {
 };
 
 const ServiceComponent = () => {
-    const { title } = useParams(); // Destructure parameters
-    const image = imageMap[title]; // Obtener la imagen correspondiente al título
-
+    const { title } = useParams(); 
+    const image = imageMap[title]; 
     return (
         <div className='h-screen w-screen flex flex-col'>
           <NavbarComponent />
