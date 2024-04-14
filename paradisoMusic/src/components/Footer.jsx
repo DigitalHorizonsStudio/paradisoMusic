@@ -33,7 +33,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-center mt-4 xl:mt-0">
+                <div className="flex flex-col justify-center items-center mt-4 xl:mt-0 mr-4">
                     <ul className="flex flex-row justify-center">
                     <li>
                             <a href="https://wa.me/13059700170">

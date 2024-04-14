@@ -15,7 +15,7 @@ const aboutUsDescription = [
 
 export const AboutUs = () => {
   return (
-    <div className='h-screen w-screen flex flex-col'>
+    <div className='h-screen flex flex-col'>
     <NavbarComponent />
     <div className="flex-1 bg-black">
       <div className="container mx-auto py-8 md:py-16">

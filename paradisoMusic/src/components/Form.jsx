@@ -13,6 +13,7 @@ export const Form = () => {
     to_phone: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false); 
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -25,6 +26,7 @@ export const Form = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true); 
 
     emailjs
       .sendForm('service_hzsgp6l', 'template_sewlpmn', form.current, {
@@ -42,7 +44,10 @@ export const Form = () => {
         (error) => {
           console.log('FAILED...', error.text);
         }
-      );
+      )
+      .finally(() => {
+        setLoading(false); 
+      });
   };
 
   return (
@@ -122,10 +127,17 @@ export const Form = () => {
         <button
           type="submit"
           className="w-full h-12 px-4 py-2 text-white bg-pink-600 rounded-lg hover:bg-pink-700 mt-4"
+          disabled={loading} 
         >
-          Solicitar más información
+          {loading ? 'Enviando...' : 'Solicitar más información'}
         </button>
       </form>
+      {loading && (
+        <div className="loader absolute inset-0 flex items-center justify-center bg-opacity-50 bg-gray-300">
+          <div className="spinner"></div>
+        </div>
+      )}
     </div>
   );
 };
+

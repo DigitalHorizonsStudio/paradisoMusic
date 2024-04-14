@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 
 export const Landing = () => {
   return (
-          <div style={{display:'flex',flexDirection:'column', width: '100vw'}}>
+          <div style={{display:'flex',flexDirection:'column', width: '100vw',}}>
         <NavbarComponent />
         <CarouselPhotos />
         <Services />
