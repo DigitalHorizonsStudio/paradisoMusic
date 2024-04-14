@@ -26,7 +26,7 @@ export const NavbarComponent = () => {
             <Nav.Link as={Link} to="/aboutus" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px',  }}>ABOUT US</Nav.Link>
             <Nav.Link as={Link} to="/contactus" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px',  }}>CONTACT US</Nav.Link>
           </Nav>
-          <Nav className="ms-auto">
+          <Nav className="ms-auto mr-4">
             <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px', backgroundColor: language === 'ENG' ? '#444' : 'transparent', padding: '8px', borderRadius: '4px' }} onClick={() => changeLanguage('ENG')}>ENG {language === 'ENG'}</Nav.Link>
             <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px', backgroundColor: language === 'ESP' ? '#444' : 'transparent', padding: '8px', borderRadius: '4px' }} onClick={() => changeLanguage('ESP')}>ESP {language === 'ESP'}</Nav.Link>
           </Nav>
