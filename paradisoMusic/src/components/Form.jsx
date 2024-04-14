@@ -55,10 +55,6 @@ export const Form = () => {
           </span>
           bring your event to life!
         </h2>
-        <p className="text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue mollis
-          interdum.
-        </p>
       </div>
 
       <form onSubmit={sendEmail} ref={form} className="w-full md:w-2/4 md:pr-8">
