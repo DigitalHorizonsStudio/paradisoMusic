@@ -14,7 +14,7 @@ export const Services = () => {
   const navigate = useNavigate();
 
   const handleServiceClick = (title) => {
-    // Navigate to the service details page
+
     navigate(`/services/${title}`, { state: { title} });
   };
 
