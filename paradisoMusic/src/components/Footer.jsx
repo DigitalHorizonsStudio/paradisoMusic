@@ -8,7 +8,7 @@ import Correo from '../assets/Footer/correo.png';
 
 const Footer = () => {
     return (
-        <footer className="bg-black pt-5 xl:w-full">
+        <footer className="bg-[#110A0C] pt-5 xl:w-full">
             <div className="container flex flex-col xl:flex-row items-center justify-between">
                 <div className="flex items-start">
                     <img src={ParadisoLogo} alt="Logo" className="w-40 h-40 mr-8 mb-4 xl:mb-0" />
