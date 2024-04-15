@@ -4,9 +4,11 @@ import ParadisoLogo from '../assets/ParadisoMusicLogo.png';
 import Whatsapp from '../assets/Footer/whatsapp.png';
 import Instagram from '../assets/Footer/instagram.png';
 import Correo from '../assets/Footer/correo.png';
+import { useTranslation } from 'react-i18next';
 
 
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <footer className="bg-[#110A0C] pt-5 xl:w-full">
             <div className="container flex flex-col xl:flex-row items-center justify-between">
@@ -15,23 +17,23 @@ const Footer = () => {
                     <img src={ParadisoLogo} alt="Logo" className="w-40 h-40 mr-8 mb-4 xl:mb-0" />
                     </Link>
                     <div className="text-white">
-                        <h3 className="font-bold text-lg mb-2">Links</h3>
+                        <h3 className="font-bold text-lg mb-2">{t(`nav.Links`)}</h3>
                         <ul className="list-none text-sm">
-                            <li><Link to="/aboutus" className="text-gray-300 hover:text-white">About us</Link></li>
-                            <li><Link to="/services" className="text-gray-300 hover:text-white">Services</Link></li>
-                            <li><Link to="/events" className="text-gray-300 hover:text-white">Events</Link></li>
-                            <li><Link to="/contactus" className="text-gray-300 hover:text-white">Contact Us</Link></li>
+                            <li><Link to="/aboutus" className="text-gray-300 hover:text-white">{t('nav.about')}</Link></li>
+                            <li><Link to="/services" className="text-gray-300 hover:text-white">{t('nav.services')}</Link></li>
+                            <li><Link to="/events" className="text-gray-300 hover:text-white">{t('nav.events')}</Link></li>
+                            <li><Link to="/contactus" className="text-gray-300 hover:text-white">{t('nav.contact')}</Link></li>
                         </ul>
                     </div>
                     <div className="text-white ml-8">
-                        <h3 className="font-bold text-lg mb-2">Services</h3>
+                        <h3 className="font-bold text-lg mb-2">{t('nav.services')}</h3>
                         <ul className="list-none text-sm">
-                            <li><Link to="/services/Staging" className="text-gray-300 hover:text-white">Staging</Link></li>
-                            <li><Link to="/services/Entertainment" className="text-gray-300 hover:text-white">Entertainment</Link></li>
-                            <li><Link to="/services/Video" className="text-gray-300 hover:text-white">Video</Link></li>
-                            <li><Link to="/services/Lighting" className="text-gray-300 hover:text-white">Lighting</Link></li>
-                            <li><Link to="/services/EquipmentRental" className="text-gray-300 hover:text-white">Equipment Rental</Link></li>
-                            <li><Link to="/services/Live%20Sound" className="text-gray-300 hover:text-white">Live Sound</Link></li>
+                            <li><Link to="/services/Staging" className="text-gray-300 hover:text-white">{t('services.titles.Staging')}</Link></li>
+                            <li><Link to="/services/Entertainment" className="text-gray-300 hover:text-white">{t('services.titles.Entertainment')}</Link></li>
+                            <li><Link to="/services/Video" className="text-gray-300 hover:text-white">{t('services.titles.Video')}</Link></li>
+                            <li><Link to="/services/Lighting" className="text-gray-300 hover:text-white">{t('services.titles.Lighting')}</Link></li>
+                            <li><Link to="/services/EquipmentRental" className="text-gray-300 hover:text-white">{t('services.titles.EquipmentRental')}</Link></li>
+                            <li><Link to="/services/Live%20Sound" className="text-gray-300 hover:text-white">{t('services.titles.Live Sound')}</Link></li>
                         </ul>
                     </div>
                 </div>

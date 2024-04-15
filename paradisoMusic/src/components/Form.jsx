@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
+import { useTranslation } from 'react-i18next';
 
 const MySwal = withReactContent(Swal);
 
@@ -14,7 +15,8 @@ export const Form = () => {
     message: ''
   });
   const [loading, setLoading] = useState(false); 
-
+  const { t } = useTranslation();
+  
   const handleChange = (e) => {
     const { id, value } = e.target;
 
@@ -36,9 +38,9 @@ export const Form = () => {
         () => {
           MySwal.fire({
             icon: 'success',
-            title: <p>Your message was sent successfully</p>,
+            title: <p>{t('successMessage')}</p>,
             showConfirmButton: true,
-            confirmButtonText: 'Continue'
+            confirmButtonText: t('submitButton')
           });
         },
         (error) => {
@@ -54,11 +56,11 @@ export const Form = () => {
     <div className="md:flex-row items-center justify-center container py-20 flex flex-col xl:flex-row items-center justify-between">
       <div className="w-full md:w-2/5 md:mr-20 mb-8 md:mb-0">
         <h2 className="md:text-6xl text-3xl font-semibold mb-4">
-          Let the event
+          {t('form.title')}
           <span className="before:block before:absolute before:-inset-0 before:bg-pink-500 relative inline-block ml-1 mr-1">
-            <span className="relative text-white">production experts</span>
+            <span className="relative text-white">{t('form.productionExperts')}</span>
           </span>
-          bring your event to life!
+          {t('form.eventToLife')}
         </h2>
       </div>
 
@@ -66,7 +68,7 @@ export const Form = () => {
         <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
           <div className="flex flex-col">
             <label htmlFor="name" className="font-medium text-gray-700 mb-2">
-              Name
+              {t('form.name')}
             </label>
             <input
               type="text"
@@ -79,7 +81,7 @@ export const Form = () => {
           </div>
           <div className="flex flex-col">
             <label htmlFor="email" className="font-medium text-gray-700 mb-2">
-              Email
+              {t('form.email')}
             </label>
             <input
               type="email"
@@ -92,7 +94,7 @@ export const Form = () => {
           </div>
           <div className="flex flex-col">
             <label htmlFor="phone" className="font-medium text-gray-700 mb-2">
-              Phone Number
+              {t('form.phoneNumber')}
             </label>
             <input
               type="tel"
@@ -105,7 +107,7 @@ export const Form = () => {
           </div>
           <div className="flex flex-col">
             <label htmlFor="service" className="font-medium text-gray-700 mb-2">
-              Service
+              {t('form.service')}
             </label>
             <select
               id="message"
@@ -114,13 +116,13 @@ export const Form = () => {
               value={formData.message}
               onChange={handleChange}
             >
-              <option value="">select your service</option>
-              <option value="staging">Staging</option>
-              <option value="entretenimiento">Entertainment</option>
-              <option value="video">Video</option>
-              <option value="iluminacion">Lighting</option>
-              <option value="alquiler-equipos">Equipment Rental</option>
-              <option value="sonido-en-vivo">Live Sound</option>
+              <option value="">{t('form.selectService')}</option>
+              <option value="staging">{t('form.staging')}</option>
+              <option value="entertainment">{t('form.entertainment')}</option>
+              <option value="video">{t('form.video')}</option>
+              <option value="lighting">{t('form.lighting')}</option>
+              <option value="equipmentRental">{t('form.equipmentRental')}</option>
+              <option value="liveSound">{t('form.liveSound')}</option>
             </select>
           </div>
         </div>
@@ -129,7 +131,7 @@ export const Form = () => {
           className="w-full h-12 px-4 py-2 text-white bg-pink-600 rounded-lg hover:bg-pink-700 mt-4"
           disabled={loading} 
         >
-          {loading ? 'Sending...' : 'REQUEST MORE INFORMATION'}
+          {loading ? t('form.sending') : t('form.submitButton')}
         </button>
       </form>
       {loading && (
