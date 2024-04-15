@@ -36,7 +36,7 @@ const images = [
 const HomeSlider = () => {
     return (
         <div className="home-slider bg-[#110A0C] min-h-screen flex flex-col justify-center items-center pt-3 pb-10">
-            <h1 className="md:text-3x1 text-6xl font-semibold text-white mt-6 lg:pt-6">Some of our clients</h1>
+            <h1 className="text-3xl sm:text-5xl xl:text-6xl sm:mb-4 font-semibold text-white mt-6 lg:pt-6">Some of our clients</h1>
             <div className="container grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  xl:mb-15">
                 {images.map((image, index) => (
                     <div key={index} className="relative flex justify-center">
