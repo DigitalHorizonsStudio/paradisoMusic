@@ -66,7 +66,7 @@ export const Form = () => {
         <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
           <div className="flex flex-col">
             <label htmlFor="name" className="font-medium text-gray-700 mb-2">
-              Nombre
+              Name
             </label>
             <input
               type="text"
@@ -79,7 +79,7 @@ export const Form = () => {
           </div>
           <div className="flex flex-col">
             <label htmlFor="email" className="font-medium text-gray-700 mb-2">
-              Correo electrónico
+              Email
             </label>
             <input
               type="email"
@@ -92,7 +92,7 @@ export const Form = () => {
           </div>
           <div className="flex flex-col">
             <label htmlFor="phone" className="font-medium text-gray-700 mb-2">
-              Teléfono
+              Phone Number
             </label>
             <input
               type="tel"
@@ -105,7 +105,7 @@ export const Form = () => {
           </div>
           <div className="flex flex-col">
             <label htmlFor="service" className="font-medium text-gray-700 mb-2">
-              Servicio
+              Service
             </label>
             <select
               id="message"
@@ -114,13 +114,13 @@ export const Form = () => {
               value={formData.message}
               onChange={handleChange}
             >
-              <option value="">Selecciona un servicio</option>
+              <option value="">select your service</option>
               <option value="staging">Staging</option>
-              <option value="entretenimiento">Entretenimiento</option>
+              <option value="entretenimiento">Entertainment</option>
               <option value="video">Video</option>
-              <option value="iluminacion">Iluminación</option>
-              <option value="alquiler-equipos">Alquiler de equipos</option>
-              <option value="sonido-en-vivo">Sonido en vivo</option>
+              <option value="iluminacion">Lighting</option>
+              <option value="alquiler-equipos">Equipment Rental</option>
+              <option value="sonido-en-vivo">Live Sound</option>
             </select>
           </div>
         </div>
@@ -129,7 +129,7 @@ export const Form = () => {
           className="w-full h-12 px-4 py-2 text-white bg-pink-600 rounded-lg hover:bg-pink-700 mt-4"
           disabled={loading} 
         >
-          {loading ? 'Enviando...' : 'Solicitar más información'}
+          {loading ? 'Enviando...' : 'request further information'}
         </button>
       </form>
       {loading && (
