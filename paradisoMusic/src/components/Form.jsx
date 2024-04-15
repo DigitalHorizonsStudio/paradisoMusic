@@ -129,7 +129,7 @@ export const Form = () => {
           className="w-full h-12 px-4 py-2 text-white bg-pink-600 rounded-lg hover:bg-pink-700 mt-4"
           disabled={loading} 
         >
-          {loading ? 'Enviando...' : 'request further information'}
+          {loading ? 'Sending...' : 'REQUEST MORE INFORMATION'}
         </button>
       </form>
       {loading && (
