@@ -15,7 +15,7 @@ const Footer = () => {
                     <img src={ParadisoLogo} alt="Logo" className="w-40 h-40 mr-8 mb-4 xl:mb-0" />
                     </Link>
                     <div className="text-white">
-                        <h3 className="font-bold text-lg mb-2">Enlaces</h3>
+                        <h3 className="font-bold text-lg mb-2">Links</h3>
                         <ul className="list-none text-sm">
                             <li><Link to="/aboutus" className="text-gray-300 hover:text-white">About us</Link></li>
                             <li><Link to="/services" className="text-gray-300 hover:text-white">Services</Link></li>
@@ -24,7 +24,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="text-white ml-8">
-                        <h3 className="font-bold text-lg mb-2">Servicios</h3>
+                        <h3 className="font-bold text-lg mb-2">Services</h3>
                         <ul className="list-none text-sm">
                             <li><Link to="/services/Staging" className="text-gray-300 hover:text-white">Staging</Link></li>
                             <li><Link to="/services/Entertainment" className="text-gray-300 hover:text-white">Entertainment</Link></li>
