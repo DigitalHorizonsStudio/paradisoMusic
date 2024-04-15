@@ -11,7 +11,9 @@ const Footer = () => {
         <footer className="bg-[#110A0C] pt-5 xl:w-full">
             <div className="container flex flex-col xl:flex-row items-center justify-between">
                 <div className="flex items-start">
+                    <Link to="/">
                     <img src={ParadisoLogo} alt="Logo" className="w-40 h-40 mr-8 mb-4 xl:mb-0" />
+                    </Link>
                     <div className="text-white">
                         <h3 className="font-bold text-lg mb-2">Enlaces</h3>
                         <ul className="list-none text-sm">
@@ -24,12 +26,12 @@ const Footer = () => {
                     <div className="text-white ml-8">
                         <h3 className="font-bold text-lg mb-2">Servicios</h3>
                         <ul className="list-none text-sm">
-                            <li><Link to="/services/staging" className="text-gray-300 hover:text-white">Staging</Link></li>
-                            <li><Link to="/services/enterteinment" className="text-gray-300 hover:text-white">Entertainment</Link></li>
-                            <li><Link to="/services/video" className="text-gray-300 hover:text-white">Video</Link></li>
-                            <li><Link to="/services/lighting" className="text-gray-300 hover:text-white">Lighting</Link></li>
-                            <li><Link to="/services/equipmentRental" className="text-gray-300 hover:text-white">Equipment Rental</Link></li>
-                            <li><Link to="/services/livesound" className="text-gray-300 hover:text-white">Live Sound</Link></li>
+                            <li><Link to="/services/Staging" className="text-gray-300 hover:text-white">Staging</Link></li>
+                            <li><Link to="/services/Entertainment" className="text-gray-300 hover:text-white">Entertainment</Link></li>
+                            <li><Link to="/services/Video" className="text-gray-300 hover:text-white">Video</Link></li>
+                            <li><Link to="/services/Lighting" className="text-gray-300 hover:text-white">Lighting</Link></li>
+                            <li><Link to="/services/EquipmentRental" className="text-gray-300 hover:text-white">Equipment Rental</Link></li>
+                            <li><Link to="/services/Live%20Sound" className="text-gray-300 hover:text-white">Live Sound</Link></li>
                         </ul>
                     </div>
                 </div>

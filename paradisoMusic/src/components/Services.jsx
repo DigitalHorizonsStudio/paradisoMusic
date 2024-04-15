@@ -21,14 +21,14 @@ export const Services = () => {
       <h1 className="text-3xl sm:text-5xl xl:text-6xl text-black xl:mb-10 xl:mt-10 text-center sm:pt-3 sm:pb-6 font-semibold" style={{ fontFamily: 'Montserrat' }}>Transform your Miami events</h1>
       <div className="w-full">
         <div className='relative flex justify-center'>
-          <button onClick={() => handleServiceClick("Recording")} className="relative">
+          <button onClick={() => handleServiceClick("Audiovisual")} className="relative">
             <img src={Recording} alt={'Recording'} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem", width: "72rem", objectFit: "cover" }} />
             <h2 className="absolute inset-0 flex items-center justify-center text-xl font-bold text-center  bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">Audiovisual studios</h2>
             <span className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full shadow-lg">NEW</span>
           </button>
         </div>
         <div className='relative flex justify-center'>
-          <button onClick={() => handleServiceClick("Audiovisual")} className="relative">
+          <button onClick={() => handleServiceClick("Recording")} className="relative">
             <img src={Audiovisual} alt={'Audiovisual'} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem", width: "72rem", objectFit: "cover" }} />
             <h2 className="absolute inset-0 flex items-center justify-center text-xl font-bold text-center  bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">Recording Studios</h2>
             <span className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full shadow-lg">NEW</span>
