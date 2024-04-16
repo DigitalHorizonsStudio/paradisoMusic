@@ -1,10 +1,10 @@
 {
   "nav": {
-    "about": "Sobre nosotros",
-    "services": "Servicios",
-    "events": "Eventos",
-    "contact": "Contáctanos",
-    "Links": "Enlaces"
+    "about": "SOBRE NOSOTROS",
+    "services": "SERVICIOS",
+    "events": "EVENTOS",
+    "contact": "CONTÁCTANOS",
+    "Links": "ENLACES"
   },
   "services": {
     "title": "Transforma tus eventos en Miami",

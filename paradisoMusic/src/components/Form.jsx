@@ -77,6 +77,7 @@ export const Form = () => {
               className="bg-white text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
               value={formData.from_name}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="flex flex-col">
@@ -90,6 +91,7 @@ export const Form = () => {
               className="bg-white text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
               value={formData.to_email}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="flex flex-col">
@@ -115,6 +117,7 @@ export const Form = () => {
               className="bg-white text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
               value={formData.message}
               onChange={handleChange}
+              required
             >
               <option value="">{t('form.selectService')}</option>
               <option value="staging">{t('form.staging')}</option>
