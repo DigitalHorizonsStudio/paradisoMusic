@@ -10,6 +10,11 @@ export default {
         '8xl': '6rem', // Tamaño de texto 8xl (ejemplo adicional)
       },
     },
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0.5px',
+      '1': '3px',
+    }
   },
   plugins: [],
 }
