@@ -90,7 +90,9 @@
         "lighting": "lighting",
         "equipmentRental": "equipmentRental",
         "liveSound": "live Sound",
-        "submitButton": "REQUEST MORE INFORMATION"
+        "submitButton": "REQUEST MORE INFORMATION",
+        "sending": "Sending",
+        "submit": "Continue"
       },
       "successMessage": "Your message was sent successfully"      
 }

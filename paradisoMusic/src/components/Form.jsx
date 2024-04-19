@@ -40,7 +40,7 @@ export const Form = () => {
             icon: 'success',
             title: <p>{t('successMessage')}</p>,
             showConfirmButton: true,
-            confirmButtonText: t('submitButton')
+            confirmButtonText: <p>{t('form.submit')}</p>,
           });
         },
         (error) => {
