@@ -20,7 +20,16 @@ export const Services = () => {
 
   return (
     <div className="bg-white min-h-screen flex flex-col justify-evenly items-center p-10">
-      <h1 className="text-3xl sm:text-5xl xl:text-6xl text-black xl:mb-10 xl:mt-10 text-center sm:pt-3 sm:pb-6 font-semibold" style={{ fontFamily: 'Montserrat' }}>{t('services.title')}</h1>
+      <h1 className="text-3xl sm:text-5xl xl:text-6xl text-black sm: mb-4 xl:mt-10 text-center sm:pt-3 sm:pb-6 font-semibold" style={{ fontFamily: 'Montserrat' }}>{t('services.title')}</h1>
+     
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:pt-6 pb-6 gap-10 ">
+        <ServiceLink image={stage} title={t('services.titles.Staging')} onClick={() => handleServiceClick("Staging")} />
+        <ServiceLink image={enterteinment} title={t('services.titles.Entertainment')} onClick={() => handleServiceClick("Entertainment")} />
+        <ServiceLink image={video} title={t('services.titles.Video')} onClick={() => handleServiceClick("Video")} />
+        <ServiceLink image={lighting} title={t('services.titles.Lighting')} onClick={() => handleServiceClick("Lighting")} />
+        <ServiceLink image={rental} title={t('services.titles.EquipmentRental')} onClick={() => handleServiceClick("EquipmentRental")} />
+        <ServiceLink image={liveSound} title={t('services.titles.Live Sound')} onClick={() => handleServiceClick("Live Sound")} />
+      </div>
       <div className="w-full">
         <div className='relative flex justify-center'>
           <button onClick={() => handleServiceClick("Audiovisual")} className="relative">
@@ -36,14 +45,6 @@ export const Services = () => {
             <span className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full shadow-lg">{t('services.new')}</span>
           </button>
         </div>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:pt-6 pb-6 gap-10 ">
-        <ServiceLink image={stage} title={t('services.titles.Staging')} onClick={() => handleServiceClick("Staging")} />
-        <ServiceLink image={enterteinment} title={t('services.titles.Entertainment')} onClick={() => handleServiceClick("Entertainment")} />
-        <ServiceLink image={video} title={t('services.titles.Video')} onClick={() => handleServiceClick("Video")} />
-        <ServiceLink image={lighting} title={t('services.titles.Lighting')} onClick={() => handleServiceClick("Lighting")} />
-        <ServiceLink image={rental} title={t('services.titles.EquipmentRental')} onClick={() => handleServiceClick("EquipmentRental")} />
-        <ServiceLink image={liveSound} title={t('services.titles.Live Sound')} onClick={() => handleServiceClick("Live Sound")} />
       </div>
     </div>
   );

@@ -53,6 +53,7 @@ export const Form = () => {
   };
 
   return (
+    <div style={{ backgroundColor: 'white' }}>
     <div className="md:flex-row items-center justify-center container py-20 flex flex-col xl:flex-row items-center justify-between">
       <div className="w-full md:w-2/5 md:mr-20 mb-8 md:mb-0">
         <h2 className="md:text-6xl text-3xl font-semibold mb-4">
@@ -77,6 +78,7 @@ export const Form = () => {
               className="bg-white text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
               value={formData.from_name}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="flex flex-col">
@@ -90,6 +92,7 @@ export const Form = () => {
               className="bg-white text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
               value={formData.to_email}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="flex flex-col">
@@ -115,6 +118,7 @@ export const Form = () => {
               className="bg-white text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
               value={formData.message}
               onChange={handleChange}
+              required
             >
               <option value="">{t('form.selectService')}</option>
               <option value="staging">{t('form.staging')}</option>
@@ -139,6 +143,7 @@ export const Form = () => {
           <div className="spinner"></div>
         </div>
       )}
+    </div>
     </div>
   );
 };

@@ -31,9 +31,9 @@ const ServiceComponent = () => {
     const image = imageMap[title]; 
     const descriptions = t(`services.descriptions.${title}`, { returnObjects: true });
     return (
-        <div className='h-screen w-screen flex flex-col' >
+        <div className='h-screen w-screen flex flex-col'style={{ backgroundColor: 'black', padding: '0 10vw'}} >
           <NavbarComponent />
-          <div className="flex-1 bg-[#110A0C] border-b border-gray-500" >
+          <div className="flex-1 bg-[#110A0C] border-b border-zinc-700" >
             <div className="container mx-auto py-8 md:py-16">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <img className="mx-auto w-full max-w-full md:max-w-none" src={image} alt={title} />
