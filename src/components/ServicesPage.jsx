@@ -6,7 +6,7 @@ import Footer from './Footer'
 export const ServicesPage = () => {
   return (
     <>
-    <div style={{ backgroundColor: 'black', padding: '0 10vw'}}>
+    <div>
     <NavbarComponent />
     <Services />
     <Footer />

@@ -10,8 +10,7 @@ import { useTranslation } from 'react-i18next';
 const Footer = () => {
     const { t } = useTranslation();
     return (
-        <footer className="bg-[#110A0C] pt-5 xl:w-full p-2">
-            <div className="container flex flex-col xl:flex-row items-center justify-between">
+        <footer className="bg-[#110A0C] mx-auto px-20 py-3 flex flex-col xl:flex-row items-center justify-between">
                 <div className="flex place-content-center">
                     <Link to="/">
                     <img src={ParadisoLogo} alt="Logo" className="w-35 h-35 ml-0 xl:ml-8 mr-8 mb-4 xl:mb-0" />
@@ -58,7 +57,6 @@ const Footer = () => {
                 </div>
                 </div>
               
-            </div>
         </footer>
     );
 }

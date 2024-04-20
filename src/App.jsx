@@ -6,7 +6,6 @@ import { ContactUs } from './components/ContactUs';
 import { AboutUs } from './components/AboutUs';
 import { ServicesPage } from './components/ServicesPage';
 import { Events } from './components/Events';
-import { useTranslation } from 'react-i18next';
 import { Suspense } from 'react';
 
 function App() {

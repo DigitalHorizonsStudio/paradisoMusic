@@ -9,7 +9,7 @@ export const AboutUs = () => {
   const { t } = useTranslation();
   
   return (
-    <div className='h-screen flex flex-col' style={{ backgroundColor: 'black', padding: '0 10vw'}}>
+    <div>
     <NavbarComponent />
     <div className="flex-1 bg-[#110A0C] border-b border-zinc-700">
       <div className="container mx-auto py-8 md:py-16">

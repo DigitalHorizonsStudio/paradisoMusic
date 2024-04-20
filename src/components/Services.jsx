@@ -19,7 +19,7 @@ export const Services = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen flex flex-col justify-evenly items-center p-10">
+    <div className="bg-white flex flex-col items-center mx-auto px-20 pb-20">
       <h1 className="text-3xl sm:text-5xl xl:text-6xl text-black sm: mb-4 xl:mt-10 text-center sm:pt-3 sm:pb-6 font-semibold" style={{ fontFamily: 'Montserrat' }}>{t('services.title')}</h1>
      
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:pt-6 pb-6 gap-10 ">
@@ -54,7 +54,7 @@ const ServiceLink = ({ image, title, onClick }) => {
   return (
     <div className="relative">
       <button onClick={onClick}>
-        <img src={image} alt={title} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none' }} />
+        <img src={image} alt={title} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none'}} />
         <h2 className="absolute inset-0 flex items-center justify-center text-xl font-bold text-center bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">{title}</h2>
       </button>
     </div>
