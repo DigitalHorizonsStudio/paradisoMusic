@@ -89,7 +89,10 @@
       "lighting": "Iluminación",
       "equipmentRental": "Alquiler de Equipos",
       "liveSound": "Sonido en Vivo",
-      "submitButton": "SOLICITAR MAS INFORMACION"
+      "submitButton": "SOLICITAR MAS INFORMACION",
+      "message": "Mensaje",
+      "sending": "Enviando",
+      "ok": "Ok"
     },
     "successMessage": "Tu mensaje fue enviado exitosamente"
   }
