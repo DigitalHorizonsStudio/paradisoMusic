@@ -96,7 +96,11 @@
         "submitButton": "More information",
         "message": "Message",
         "sending": "Sending ...",
-        "ok": "CONTINUE"
+        "ok": "Continue",
+        "errorFields": "ggggg",
+        "errorName": "You must write a name",
+        "errorEmail": "You must write a valid email",
+        "errorService": "You must select a service"
       },
       "successMessage": "Your message was sent successfully"      
 }
