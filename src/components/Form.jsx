@@ -54,7 +54,7 @@ export const Form = () => {
   };
 
   return (
-    <div className='mx-auto px-20' style={{ backgroundColor: 'white' }}>
+    <div className='mx-auto lg:px-20 px-2' style={{ backgroundColor: 'white' }}>
       <div className="md:flex-row items-center justify-center container py-20 flex flex-col xl:flex-row items-center justify-between">
         <div className="w-full md:w-2/5 md:mr-20 mb-8 md:mb-0">
           <h2 className="md:text-6xl text-3xl font-semibold mb-4">

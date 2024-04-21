@@ -10,12 +10,12 @@ import { useTranslation } from 'react-i18next';
 const Footer = () => {
     const { t } = useTranslation();
     return (
-        <footer className="bg-[#110A0C] mx-auto px-20 py-3 flex flex-col xl:flex-row items-center justify-between">
-                <div className="flex place-content-center">
+        <footer className="bg-[#110A0C] mx-auto px-20 py-10 flex flex-col xl:flex-row items-center justify-between">
+                <div className="flex align-items-center">
                     <Link to="/">
-                    <img src={ParadisoLogo} alt="Logo" className="w-35 h-35 ml-0 xl:ml-8 mr-8 mb-4 xl:mb-0" />
+                    <img src={ParadisoLogo} alt="Logo" className="w-35 h-35 ml-0 mr-8" />
                     </Link>
-                    <div className="text-white ml-12 mt-3">
+                    <div className="text-white ml-8">
                         <h3 className="text-m mb-2">{t(`nav.Links`)}</h3>
                         <ul className="list-none text-xs space-y-2">
                             <li><Link to="/aboutus" className="text-gray-300 hover:text-white">{t('nav.about')}</Link></li>
@@ -24,18 +24,24 @@ const Footer = () => {
                             <li><Link to="/contactus" className="text-gray-300 hover:text-white">{t('nav.contact')}</Link></li>
                         </ul>
                     </div>
-                    <div className="text-white ml-12 mt-3">
+                    <div className="text-white ml-12" >
                         <h3 className="text-m mb-2">{t('nav.services')}</h3>
-                        <ul className="list-none text-xs space-y-2">
+                        <div className='flex justify-start gap-3'>
+                        <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start">
                             <li><Link to="/services/Staging" className="text-gray-300 hover:text-white">{t('services.titles.Staging')}</Link></li>
-                            <li><Link to="/services/Entertainment" className="text-gray-300 hover:text-white">{t('services.titles.Entertainment')}</Link></li>
                             <li><Link to="/services/Video" className="text-gray-300 hover:text-white">{t('services.titles.Video')}</Link></li>
                             <li><Link to="/services/Lighting" className="text-gray-300 hover:text-white">{t('services.titles.Lighting')}</Link></li>
-                            <li><Link to="/services/EquipmentRental" className="text-gray-300 hover:text-white">{t('services.titles.EquipmentRental')}</Link></li>
-                            <li><Link to="/services/Live%20Sound" className="text-gray-300 hover:text-white">{t('services.titles.Live Sound')}</Link></li>
                             <li><Link to="/services/Audiovisual" className="text-gray-300 hover:text-white">{t('services.titles.Audiovisual')}</Link></li>
-                            <li><Link to="/services/Recording" className="text-gray-300 hover:text-white">{t('services.titles.Recording')}</Link></li>
+                         
                         </ul>
+                        <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start">
+                            <li><Link to="/services/EquipmentRental" className="text-gray-300 hover:text-white">{t('services.titles.EquipmentRental')}</Link></li>
+                        <li><Link to="/services/Live%20Sound" className="text-gray-300 hover:text-white">{t('services.titles.Live Sound')}</Link></li>
+                        <li><Link to="/services/Entertainment" className="text-gray-300 hover:text-white">{t('services.titles.Entertainment')}</Link></li>
+                            <li><Link to="/services/Recording" className="text-gray-300 hover:text-white">{t('services.titles.Recording')}</Link></li>
+
+                        </ul>
+                        </div>
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center mt-4 xl:mt-0 mr-4">
