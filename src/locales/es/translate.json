@@ -94,7 +94,11 @@
       "submitButton": "Mas informacion",
       "message": "Mensaje",
       "sending": "Enviando ...",
-      "ok": "CONTINUAR"
+      "ok": "Continuar",
+      "errorName": "Es necesario escribir un nombre",
+      "errorEmail": "Es necesario escribir un Email valido",
+      "errorService": "Es necesario seleccionar un servicio"
+
     },
     "successMessage": "Tu mensaje fue enviado exitosamente"
   }
