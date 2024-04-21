@@ -30,7 +30,7 @@ export const Services = () => {
         <ServiceLink image={rental} title={t('services.titles.EquipmentRental')} onClick={() => handleServiceClick("EquipmentRental")} />
         <ServiceLink image={liveSound} title={t('services.titles.Live Sound')} onClick={() => handleServiceClick("Live Sound")} />
       </div>
-      <div className="w-full">
+      <div className="w-full ">
         <div className='relative flex justify-center'>
           <button onClick={() => handleServiceClick("Audiovisual")} className="relative">
             <img src={Recording} alt={'Recording'} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem", width: "72rem", objectFit: "cover" }} />
@@ -38,7 +38,7 @@ export const Services = () => {
             <span className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full shadow-lg">{t('services.new')}</span>
           </button>
         </div>
-        <div className='relative flex justify-center'>
+        <div className='relative flex justify-center mt-8 mb-0'>
           <button onClick={() => handleServiceClick("Recording")} className="relative">
             <img src={Audiovisual} alt={'Audiovisual'} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem", width: "72rem", objectFit: "cover" }} />
             <h2 className="absolute inset-0 flex items-center justify-center text-xl font-bold text-center  bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">{t('services.recording')}</h2>

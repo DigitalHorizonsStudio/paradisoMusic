@@ -116,7 +116,7 @@ export const Form = () => {
               <select
                 id="service" // Cambiado a 'service' para coincidir con el estado
                 name="service"
-                className="bg-white text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
+                className="block w-full sm:w-auto px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600 appearance-none"
                 value={formData.service}
                 onChange={handleChange} // Cambiado a 'service' para coincidir con el estado
                 required

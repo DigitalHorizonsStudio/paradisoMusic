@@ -18,10 +18,10 @@ const Footer = () => {
                     <div className="text-white ml-12 mt-3">
                         <h3 className="text-m mb-2">{t(`nav.Links`)}</h3>
                         <ul className="list-none text-xs space-y-2">
-                            <li><Link to="/aboutus" className="text-gray-300 hover:text-white">About us</Link></li>
-                            <li><Link to="/services" className="text-gray-300 hover:text-white">Services</Link></li>
-                            <li><Link to="/events" className="text-gray-300 hover:text-white">Events</Link></li>
-                            <li><Link to="/contactus" className="text-gray-300 hover:text-white">Contact Us</Link></li>
+                            <li><Link to="/aboutus" className="text-gray-300 hover:text-white">{t('nav.about')}</Link></li>
+                            <li><Link to="/services" className="text-gray-300 hover:text-white">{t('nav.services')}</Link></li>
+                            <li><Link to="/events" className="text-gray-300 hover:text-white">{t('nav.events')}</Link></li>
+                            <li><Link to="/contactus" className="text-gray-300 hover:text-white">{t('nav.contact')}</Link></li>
                         </ul>
                     </div>
                     <div className="text-white ml-12 mt-3">

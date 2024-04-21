@@ -1,10 +1,10 @@
 {
   "nav": {
-    "about": "SOBRE NOSOTROS",
-    "services": "SERVICIOS",
-    "events": "EVENTOS",
-    "contact": "CONTÁCTANOS",
-    "Links": "ENLACES"
+    "about": "Nosotros",
+    "services": "Servicios",
+    "events": "Eventos",
+    "contact": "Contactanos",
+    "Links": "Enlaces"
   },
   "services": {
     "title": "Transforma tus eventos en Miami",
@@ -61,7 +61,9 @@
       ]
     }
   },
-
+  "partners": {
+    "title": "Nuestros clientes"
+  },
   "aboutUs": {
     "Description": [
         "Somos un equipo de Productores de Eventos, Ingenieros de Audio y Artistas dedicados.",
@@ -89,9 +91,9 @@
       "lighting": "Iluminación",
       "equipmentRental": "Alquiler de Equipos",
       "liveSound": "Sonido en Vivo",
-      "submitButton": "SOLICITAR MAS INFORMACION",
+      "submitButton": "Mas informacion",
       "message": "Mensaje",
-      "sending": "ENVIANDO ...",
+      "sending": "Enviando ...",
       "ok": "CONTINUAR"
     },
     "successMessage": "Tu mensaje fue enviado exitosamente"
