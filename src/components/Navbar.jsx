@@ -12,7 +12,7 @@ export const NavbarComponent = () => {
   };
 
   return (
-      <div className="mx-auto lg:px-20 px-3" style={{backgroundColor: '#110A0C'}}>
+      <div className="mx-auto lg:px-20 px-8" style={{backgroundColor: '#110A0C'}}>
         <Navbar variant="dark" expand="lg" style={{  color: '#ffffff' }} >
           <Navbar.Brand as={Link} to="/">
             <img style={{ width: '70px', height: '70px' }} src={logo} alt="Paradiso Music Logo" />
