@@ -91,8 +91,8 @@
       "liveSound": "Sonido en Vivo",
       "submitButton": "SOLICITAR MAS INFORMACION",
       "message": "Mensaje",
-      "sending": "Enviando",
-      "ok": "Ok"
+      "sending": "ENVIANDO ...",
+      "ok": "CONTINUAR"
     },
     "successMessage": "Tu mensaje fue enviado exitosamente"
   }

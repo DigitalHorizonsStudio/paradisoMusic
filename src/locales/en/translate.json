@@ -92,8 +92,8 @@
         "liveSound": "live Sound",
         "submitButton": "REQUEST MORE INFORMATION",
         "message": "Message",
-        "sending": "Sending",
-        "ok": "Ok"
+        "sending": "SENDING ...",
+        "ok": "CONTINUE"
       },
       "successMessage": "Your message was sent successfully"      
 }
