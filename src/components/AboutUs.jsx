@@ -9,7 +9,7 @@ export const AboutUs = () => {
   const { t } = useTranslation();
   
   return (
-    <div className='h-screen flex flex-col' style={{ backgroundColor: 'black', padding: '0 10vw'}}>
+    <div>
     <NavbarComponent />
     <div className="flex-1 bg-[#110A0C] border-b border-zinc-700">
       <div className="container mx-auto py-8 md:py-16">
@@ -17,7 +17,7 @@ export const AboutUs = () => {
           <img className="mx-auto w-full max-w-full md:max-w-none" src={aboutUsImage} alt="About Us" />
           <div className="text-white">
             <h2 className="text-5xl mb-4 inline-block border-b-[1px] border-white font-montserrat ">{t('nav.about')}</h2>
-            <ul className="list-disc pl-6">
+            <ul className="">
                 {t('aboutUs.Description', { returnObjects: true }).map((description, index) => (
                   <li key={index} className="mb-2">{description}</li>
                 ))}

@@ -1,10 +1,10 @@
 {
     "nav": {
-      "about": "ABOUT US",
-      "services": "SERVICES",
-      "events": "EVENTS",
-      "contact": "CONTACT US",
-      "Links": "LINKS"
+      "about": "About us",
+      "services": "Services",
+      "events": "Events",
+      "contact": "Contact us",
+      "Links": "Links"
     },
     "services": {
       "title": "Transform your Miami events",
@@ -62,6 +62,9 @@
         ]
       }
     },
+    "partners": {
+      "title": "Some of our clients"
+    },
     "aboutUs":
       { "Description": [
         "We are a team of dedicated Event Producers, Audio Engineers and Artists.",
@@ -90,7 +93,10 @@
         "lighting": "lighting",
         "equipmentRental": "equipmentRental",
         "liveSound": "live Sound",
-        "submitButton": "REQUEST MORE INFORMATION"
+        "submitButton": "More information",
+        "message": "Message",
+        "sending": "Sending ...",
+        "ok": "CONTINUE"
       },
       "successMessage": "Your message was sent successfully"      
 }
