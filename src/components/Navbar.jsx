@@ -25,11 +25,11 @@ export const NavbarComponent = () => {
               <Nav.Link as={Link} to="/events" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px' }}>{t('nav.events')}</Nav.Link>
               <Nav.Link as={Link} to="/contactus" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px' }}>{t('nav.contact')}</Nav.Link>
             </Nav>
+          </Navbar.Collapse>
             <Nav className="ms-auto mr-4">
               <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px', backgroundColor: i18n.language === 'en' ? '#444' : 'transparent', padding: '8px', borderRadius: '4px' }} onClick={() => changeLanguage('en')}>ENG {i18n.language === 'ENG'}</Nav.Link>
               <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px', backgroundColor: i18n.language === 'es' ? '#444' : 'transparent', padding: '8px', borderRadius: '4px' }} onClick={() => changeLanguage('es')}>ESP {i18n.language === 'ESP'}</Nav.Link>
             </Nav>
-          </Navbar.Collapse>
         </Navbar>
       </div>
   );

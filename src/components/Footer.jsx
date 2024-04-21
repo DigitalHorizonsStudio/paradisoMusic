@@ -33,6 +33,8 @@ const Footer = () => {
                             <li><Link to="/services/Lighting" className="text-gray-300 hover:text-white">{t('services.titles.Lighting')}</Link></li>
                             <li><Link to="/services/EquipmentRental" className="text-gray-300 hover:text-white">{t('services.titles.EquipmentRental')}</Link></li>
                             <li><Link to="/services/Live%20Sound" className="text-gray-300 hover:text-white">{t('services.titles.Live Sound')}</Link></li>
+                            <li><Link to="/services/Audiovisual" className="text-gray-300 hover:text-white">{t('services.titles.Audiovisual')}</Link></li>
+                            <li><Link to="/services/Recording" className="text-gray-300 hover:text-white">{t('services.titles.Recording')}</Link></li>
                         </ul>
                     </div>
                 </div>
