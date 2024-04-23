@@ -22,7 +22,9 @@ export const Services = () => {
 
   return (
     <div className="bg-white flex flex-col items-center mx-auto px-20 pb-20">
-      <h1 className="text-3xl sm:text-5xl xl:text-6xl text-black sm: mb-4 xl:mt-10 text-center sm:pt-3 sm:pb-6 font-semibold" style={{ fontFamily: 'Montserrat' }}>{t('services.title')}</h1>
+      <h1 className="text-3xl sm:text-5xl xl:text-6xl text-black sm: mb-2 sm: pt-8 xl:mt-10 text-center font-semibold" style={{ fontFamily: 'Montserrat' }}>{t('services.title')}</h1>
+      <h1 className="text-xl sm:text-4xl xl:text-4xl text-black sm: mb-4 text-center sm:pt-3 sm:pb-6 font-semibold" style={{ fontFamily: 'Montserrat' }}>{t('services.title2')}</h1>
+      
      
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:pt-6 pb-6 gap-10 ">
         <ServiceLink image={stage} title={t('services.titles.Staging')} onClick={() => handleServiceClick("Staging")} />
