@@ -13,11 +13,11 @@ const Footer = () => {
         <footer className="bg-[#110A0C] mx-auto px-20 py-10 flex flex-col xl:flex-row items-center justify-between">
                 <div className="flex align-items-center">
                     <Link to="/">
-                    <img src={ParadisoLogo} alt="Logo" className="w-35 h-35 ml-0 mr-8" />
+                    <img src={ParadisoLogo} alt="Logo" className="w-35 h-35 ml-0 mr-8 d-none d-sm-block" />
                     </Link>
                     <div className="text-white ml-8">
-                        <h3 className="text-m mb-2">{t(`nav.Links`)}</h3>
-                        <ul className="list-none text-xs space-y-2">
+                        <h3 className="text-m mb-3 ml-2">{t(`nav.Links`)}</h3>
+                        <ul className="list-none text-xs space-y-2 text-center">
                             <li><Link to="/aboutus" className="text-gray-300 hover:text-white">{t('nav.about')}</Link></li>
                             <li><Link to="/services" className="text-gray-300 hover:text-white">{t('nav.services')}</Link></li>
                             <li><Link to="/events" className="text-gray-300 hover:text-white">{t('nav.events')}</Link></li>
@@ -25,16 +25,16 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="text-white ml-12" >
-                        <h3 className="text-m mb-2">{t('nav.services')}</h3>
+                        <h3 className="text-m mb-3 text-center mr-6">{t('nav.services')}</h3>
                         <div className='flex justify-start gap-3'>
-                        <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start">
+                        <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start text-center">
                             <li><Link to="/services/Staging" className="text-gray-300 hover:text-white">{t('services.titles.Staging')}</Link></li>
                             <li><Link to="/services/Video" className="text-gray-300 hover:text-white">{t('services.titles.Video')}</Link></li>
                             <li><Link to="/services/Lighting" className="text-gray-300 hover:text-white">{t('services.titles.Lighting')}</Link></li>
                             <li><Link to="/services/Audiovisual" className="text-gray-300 hover:text-white">{t('services.titles.Audiovisual')}</Link></li>
                          
                         </ul>
-                        <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start">
+                        <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start text-center">
                             <li><Link to="/services/EquipmentRental" className="text-gray-300 hover:text-white">{t('services.titles.EquipmentRental')}</Link></li>
                         <li><Link to="/services/Live%20Sound" className="text-gray-300 hover:text-white">{t('services.titles.Live Sound')}</Link></li>
                         <li><Link to="/services/Entertainment" className="text-gray-300 hover:text-white">{t('services.titles.Entertainment')}</Link></li>
