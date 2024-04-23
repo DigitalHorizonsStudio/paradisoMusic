@@ -10,6 +10,8 @@ import video from '../assets/video.png';
 import Recording from '../assets/podcast1.png'
 import Audiovisual from '../assets/setAudio.png'
 
+import '../components/Services.css'
+
 export const Services = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -54,7 +56,7 @@ const ServiceLink = ({ image, title, onClick }) => {
   return (
     <div className="relative">
       <button onClick={onClick}>
-        <img src={image} alt={title} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none'}} />
+        <img src={image} alt={title} className="mobile-styles w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none'}} />
         <h2 className="absolute inset-0 flex items-center justify-center text-xl font-bold text-center bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">{title}</h2>
       </button>
     </div>

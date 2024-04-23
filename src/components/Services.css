@@ -1,15 +1,16 @@
-.img-services {
-    gap: 20px; /* Spacing between items */
-}
 
-.relative {
-    width: max-content;
-}
-.service-text {
-    position: relative;
-    bottom: 4rem;
-
-}
-.absolute.inset-0.flex {
-    z-index: 1 !important;  /* Increase z-index to ensure text is on top */
+  @media (max-width: 1024px) {
+    .mobile-styles {
+      width: 100% !important; 
+      object-fit: cover !important;
+      border-radius: 0.5rem !important;
+      margin-bottom: 0.5rem !important;
+      transition: transform 0.3s ease !important;
+      height: 10rem !important;
+      width: 72rem !important;
+    }
+    
+    .mobile-styles:hover {
+      transform: scale(0.95);
+    }
   }
