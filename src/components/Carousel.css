@@ -20,3 +20,19 @@
     }
   }
   
+  .loader-spinner{
+    background-color: #000000;
+    height: 100vh;
+  }
+  
+  .custom-spinner {
+    position: absolute; 
+    color: azure;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    width: 100px; 
+    height: 100px;
+  }

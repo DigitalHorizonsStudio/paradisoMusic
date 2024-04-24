@@ -59,7 +59,7 @@ const ServiceLink = ({ image, title, onClick }) => {
     <div className="relative">
       <button onClick={onClick}>
         <img src={image} alt={title} className="mobile-styles w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none'}} />
-        <h2 className="absolute inset-0 flex items-center justify-center text-xl font-bold text-center bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">{title}</h2>
+        <h2 className="opacity-80 absolute mt-8 inset-0 flex items-start justify-center text-xl font-bold text-center bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">{title}</h2>
       </button>
     </div>
   );

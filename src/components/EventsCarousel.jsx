@@ -1,4 +1,6 @@
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Spinner from 'react-bootstrap/Spinner'; // Import Spinner component from react-bootstrap
 import './Carousel.css';
 
 import behringer from '../assets/events-slide/behringer.jpg';
@@ -38,22 +40,39 @@ const slides = [
 ];
 
 export const EventsCarousel = () => {
+
+  const [imagesLoaded, setImagesLoaded] = useState(0);
+  const totalImages = slides.length;
+
+  const handleImageLoad = () => {
+    setImagesLoaded(prevState => prevState + 1);
+  };
+
   return (
-    <Carousel data-bs-theme="dark">
-      {slides.map((slide, index) => (
-        <Carousel.Item key={index}>
-          <div className="img-container">
-            <img
-              className="img-carousel"
-              src={slide.src}
-              alt={`Slide ${index + 1}`}
-            />
-          </div>
-          <Carousel.Caption>
-            <h5>{slide.title}</h5>
-          </Carousel.Caption>
-        </Carousel.Item>
-      ))}
-    </Carousel>
+    <div>
+      {imagesLoaded < totalImages && (
+        <div className="loader-spinner">
+        <Spinner animation="border" role="status" className="custom-spinner">
+        </Spinner>
+        </div>
+      )}
+      <Carousel data-bs-theme="dark" fade={true}>
+        {slides.map((slide, index) => (
+          <Carousel.Item key={index}>
+            <div className="img-container">
+              <img
+                className="img-carousel"
+                src={slide.src}
+                alt={`Slide ${index + 1}`}
+                onLoad={handleImageLoad}
+              />
+            </div>
+            <Carousel.Caption>
+              <h5>{slide.title}</h5>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
   );
 };
