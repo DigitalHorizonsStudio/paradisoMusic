@@ -10,8 +10,8 @@ import lighting from '../assets/lighting.png';
 import liveSound from '../assets/liveSound.png';
 import stage from '../assets/stage.png';
 import video from '../assets/video.png';
-import recording from '../assets/setAudio.png'
-import audiovisual from '../assets/podcast1.png'
+import audiovisual from '../assets/setAudio.png'
+import recording from '../assets/podcast1.png'
 
 const imageMap = {
   "Staging": stage,
