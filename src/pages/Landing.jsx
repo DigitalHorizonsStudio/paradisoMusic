@@ -5,6 +5,7 @@ import { Services } from '../components/Services'
 import { Form } from '../components/Form'
 import HomeSlider from '../components/Partners'
 import Footer from '../components/Footer'
+import { CarouselPartners } from '../components/PartnersCarousel'
 
 
 export const Landing = () => {
@@ -15,7 +16,12 @@ export const Landing = () => {
         <CarouselPhotos />
         </div>
         <Services />
+        <div className="d-block d-sm-none">
+        <CarouselPartners />
+        </div>
+        <div className="d-none d-sm-block">
         <HomeSlider />
+        </div>
         <Form />
         <Footer />
       </div>
