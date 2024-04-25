@@ -10,8 +10,8 @@ import lighting from '../assets/lighting.png';
 import liveSound from '../assets/liveSound.png';
 import stage from '../assets/stage.png';
 import video from '../assets/video.png';
-import recording from '../assets/podcast1.png'
 import audiovisual from '../assets/setAudio.png'
+import recording from '../assets/podcast1.png'
 
 const imageMap = {
   "Staging": stage,
@@ -36,7 +36,7 @@ const ServiceComponent = () => {
           <div className="flex-1 bg-[#110A0C] border-b border-zinc-700 py-4 " >
             <div className="container mx-auto px-4 md:py-16">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <img className="mx-auto w-full max-w-full md:max-w-none min-h-96" src={image} alt={title} />
+                <img className="mx-auto w-full max-w-full md:max-w-none min-h-96 rounded" src={image} alt={title} />
                 <div className="text-white">
                   <h2 className="text-xl lg:text-6xl mb-4 inline-block border-b-[1px] border-white font-montserrat">{t(`services.titles.${title}`)}</h2>
                   <ul>

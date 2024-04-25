@@ -4,10 +4,12 @@
     "services": "Servicios",
     "events": "Eventos",
     "contact": "Contactanos",
-    "Links": "Enlaces"
+    "Links": "Enlaces",
+    "idioma": "Idioma"
   },
   "services": {
-    "title": "Transforma tus eventos en Miami",
+    "title": "Bienvenido a Paradiso Music",
+    "title2":"La principal compañía de producción de eventos en el sur de Florida",
     "new": "Nuevo",
     "audiovisual": "Estudio Audiovisual",
     "recording": "Estudio de Grabación",
@@ -94,7 +96,11 @@
       "submitButton": "Mas informacion",
       "message": "Mensaje",
       "sending": "Enviando ...",
-      "ok": "CONTINUAR"
+      "ok": "Continuar",
+      "errorName": "Es necesario escribir un nombre",
+      "errorEmail": "Es necesario escribir un Email valido",
+      "errorService": "Es necesario seleccionar un servicio"
+
     },
     "successMessage": "Tu mensaje fue enviado exitosamente"
   }

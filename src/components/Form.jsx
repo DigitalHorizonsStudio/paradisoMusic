@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
@@ -16,7 +16,23 @@ export const Form = () => {
     message: ''
   });
   const [loading, setLoading] = useState(false);
+
   const { t } = useTranslation();
+
+  useEffect(() => {
+    const forms = document.querySelectorAll('.needs-validation');
+
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, []);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -27,10 +43,16 @@ export const Form = () => {
     }));
   };
 
+  const resetValidation = () => {
+    const forms = document.querySelectorAll('.needs-validation');
+    Array.from(forms).forEach(form => {
+      form.classList.remove('was-validated');
+    });
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
-
     emailjs
       .sendForm('service_hzsgp6l', 'template_sewlpmn', form.current, {
         publicKey: 'YjKPkpMXSw2Jjnf2Z'
@@ -43,6 +65,14 @@ export const Form = () => {
             showConfirmButton: true,
             confirmButtonText: t('form.ok')
           });
+          setFormData({
+            from_name: '',
+            to_email: '',
+            to_phone: '',
+            service: '',
+            message: ''
+          });
+          resetValidation();
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -66,7 +96,7 @@ export const Form = () => {
           </h2>
         </div>
 
-        <form onSubmit={sendEmail} ref={form} className="w-full md:w-2/4 md:pr-8">
+        <form onSubmit={sendEmail} ref={form} className="w-full md:w-2/4 md:pr-8 needs-validation" noValidate>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
             <div className="flex flex-col">
               <label htmlFor="name" className="font-medium text-gray-700 mb-2">
@@ -81,6 +111,9 @@ export const Form = () => {
                 onChange={handleChange}
                 required
               />
+              <div class="invalid-feedback">
+              {t('form.errorName')}
+              </div>
             </div>
             <div className="flex flex-col">
               <label htmlFor="email" className="font-medium text-gray-700 mb-2">
@@ -95,6 +128,9 @@ export const Form = () => {
                 onChange={handleChange}
                 required
               />
+              <div class="invalid-feedback">
+              {t('form.errorEmail')}
+              </div>
             </div>
             <div className="flex flex-col">
               <label htmlFor="phone" className="font-medium text-gray-700 mb-2">
@@ -129,6 +165,9 @@ export const Form = () => {
                 <option value="equipmentRental">{t('form.equipmentRental')}</option>
                 <option value="liveSound">{t('form.liveSound')}</option>
               </select>
+              <div class="invalid-feedback">
+               {t('form.errorService')}
+              </div>
             </div>
             <div className="flex flex-col">
               <label htmlFor="message" className="font-medium text-gray-700 mb-2">
@@ -140,7 +179,7 @@ export const Form = () => {
                 className="bg-white text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
                 value={formData.message}
                 onChange={handleChange} // Cambiado a 'message' para coincidir con el estado
-                required
+                
               />
             </div>
           </div>
@@ -160,4 +199,5 @@ export const Form = () => {
       </div>
     </div>
   );
+  
 };

@@ -4,10 +4,12 @@
       "services": "Services",
       "events": "Events",
       "contact": "Contact us",
-      "Links": "Links"
+      "Links": "Links",
+      "idioma": "Language"
     },
     "services": {
-      "title": "Transform your Miami events",
+      "title": "Welcome to Paradiso Music",
+      "title2": "South Florida’s Prime Event Production Company",
       "new": "New",
       "audiovisual": "Audiovisual studio",
       "recording": "Recording studio",
@@ -87,16 +89,20 @@
         "phoneNumber": "Phone Number",
         "service": "Service",
         "selectService": "Select your service",
-        "staging": "staging",
-        "entertainment": "entertainment",
+        "staging": "Staging",
+        "entertainment": "Entertainment",
         "video": "Video",
-        "lighting": "lighting",
-        "equipmentRental": "equipmentRental",
-        "liveSound": "live Sound",
+        "lighting": "Lighting",
+        "equipmentRental": "Equipment Rental",
+        "liveSound": "Live Sound",
         "submitButton": "More information",
         "message": "Message",
         "sending": "Sending ...",
-        "ok": "CONTINUE"
+        "ok": "Continue",
+        "errorFields": "ggggg",
+        "errorName": "You must write a name",
+        "errorEmail": "You must write a valid email",
+        "errorService": "You must select a service"
       },
       "successMessage": "Your message was sent successfully"      
 }
