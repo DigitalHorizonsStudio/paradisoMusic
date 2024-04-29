@@ -17,27 +17,27 @@ import Vezasur from '../assets/partners/VezaSur.png';
 import { useTranslation } from 'react-i18next';
 
 const images = [
-    BallAndChain,
-    Baltimore,
-    Cheeca,
-    Dolphin,
-    Frail,
-    Grazianos,
-    HardRock,
-    Image,
-    IslandGrill,
+    Vezasur,
     magic,
-    MIA,
+    HardRock,
+    Grazianos,
+    BallAndChain,
     Montys,
+    MIA,
+    IslandGrill,
+    Cheeca,
+    Baltimore,
+    Dolphin,
+    Image,
     Rusty,
+    Frail,
     RustyPelican,
-    Vezasur
 ];
 
 const HomeSlider = () => {
     const { t } = useTranslation();
     return (
-        <div className=" mx-auto px-10 home-slider bg-[#110A0C] flex flex-col justify-center items-center mt-0">
+        <div className=" mx-auto px-10 home-slider bg-[#110A0C] flex flex-col justify-center items-center mt-0 sm:pt-5">
             <h1 className="text-3xl sm:text-5xl xl:text-6xl sm:mb-4 font-semibold text-white mt-6 lg:pt-6">{t('partners.title')}</h1>
             <div className="container grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  xl:mb-15">
                 {images.map((image, index) => (
