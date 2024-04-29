@@ -39,10 +39,10 @@ export const NavbarComponent = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@paradisomusicpro.com">
-                  <img src={Viber} alt="Correo" className="w-5 h-5 mx-2" />
+                <a href="tel:+13059700170">
+                    <img src={Viber} alt="Viber" className="w-5 h-5 mx-2" />
                 </a>
-              </li>
+            </li>
             </ul>
           </div>
 
