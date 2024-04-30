@@ -26,7 +26,7 @@ export const NavbarComponent = () => {
         <Navbar.Brand as={Link} to="/">
           <img style={{ width: '70px', height: '70px' }} src={logo} alt="Paradiso Music Logo" />
         </Navbar.Brand>
-        <div className="lg:hidden pl-20 ml-5 flex flex-row items-center justify-center text-center">
+        <div className="lg:hidden gap-3 pl-20 ml-5 flex flex-row items-center justify-center text-center">
             <ul className="flex flex-row justify-center text-xs">
               <li className='xl:hidden'>
                 <a href="tel:+13059700170">
@@ -40,10 +40,10 @@ export const NavbarComponent = () => {
                 </a>
               </li>
             </ul>
-          </div>
 
         <Navbar.Toggle onClick={handleToggle} aria-controls="basic-navbar-nav" color='#ffffff' />
-        
+        </div>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/services" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px' }}>{t('nav.services')}</Nav.Link>
