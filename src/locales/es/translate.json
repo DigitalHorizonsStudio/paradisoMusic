@@ -7,6 +7,7 @@
     "Links": "Enlaces",
     "idioma": "Idioma"
   },
+  "errorMessage": "¡Ups! Parece que hubo un problema al enviar el correo electrónico. Por favor contáctanos directamente a través de otros medios disponibles.",
   "services": {
     "title": "Bienvenido a Paradiso Music",
     "title2":"La principal compañía de producción de eventos en el sur de Florida",

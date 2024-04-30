@@ -7,6 +7,7 @@
       "Links": "Links",
       "idioma": "Language"
     },
+    "errorMessage": "Oops! It seems there was an issue sending the email. Please reach out to us directly through other available means of communication.",
     "services": {
       "title": "Welcome to Paradiso Music",
       "title2": "South Florida’s Prime Event Production Company",
@@ -95,7 +96,7 @@
         "lighting": "Lighting",
         "equipmentRental": "Equipment Rental",
         "liveSound": "Live Sound",
-        "submitButton": "Send",
+        "submitButton": "SEND",
         "message": "Message",
         "sending": "Sending ...",
         "ok": "Continue",

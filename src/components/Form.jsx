@@ -73,15 +73,21 @@ export const Form = () => {
             message: ''
           });
           resetValidation();
+          setLoading(false);
         },
         (error) => {
           console.log('FAILED...', error.text);
+          MySwal.fire({
+            icon: 'error',
+            title: <p>{t('errorMessage')}</p>,
+            showConfirmButton: true,
+            confirmButtonText: t('form.ok')
+          });
+          setLoading(false);
         }
-      )
-      .finally(() => {
-        setLoading(false);
-      });
+      );
   };
+  
 
   return (
     <div className='mx-auto lg:px-20 px-2' style={{ backgroundColor: 'white' }}>
