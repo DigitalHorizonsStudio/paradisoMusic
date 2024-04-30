@@ -27,12 +27,12 @@ export const Services = () => {
       
      
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:pt-6 pb-6 gap-10 ">
-        <ServiceLink image={stage} title={t('services.titles.Staging')} onClick={() => handleServiceClick("Staging")} />
-        <ServiceLink image={enterteinment} title={t('services.titles.Entertainment')} onClick={() => handleServiceClick("Entertainment")} />
-        <ServiceLink image={video} title={t('services.titles.Video')} onClick={() => handleServiceClick("Video")} />
-        <ServiceLink image={lighting} title={t('services.titles.Lighting')} onClick={() => handleServiceClick("Lighting")} />
-        <ServiceLink image={rental} title={t('services.titles.EquipmentRental')} onClick={() => handleServiceClick("EquipmentRental")} />
         <ServiceLink image={liveSound} title={t('services.titles.Live Sound')} onClick={() => handleServiceClick("Live Sound")} />
+        <ServiceLink image={stage} title={t('services.titles.Staging')} onClick={() => handleServiceClick("Staging")} />
+        <ServiceLink image={lighting} title={t('services.titles.Lighting')} onClick={() => handleServiceClick("Lighting")} />
+        <ServiceLink image={video} title={t('services.titles.Video')} onClick={() => handleServiceClick("Video")} />
+        <ServiceLink image={rental} title={t('services.titles.EquipmentRental')} onClick={() => handleServiceClick("EquipmentRental")} />
+        <ServiceLink image={enterteinment} title={t('services.titles.Entertainment')} onClick={() => handleServiceClick("Entertainment")} />
       </div>
       <div className="w-full ">
         <div className='relative flex justify-center'>

@@ -12,7 +12,7 @@ export const Landing = () => {
   return (
       <div>
         <NavbarComponent />
-        <div className="border-t border-zinc-700">
+        <div className="">
         <CarouselPhotos />
         </div>
         <Services />

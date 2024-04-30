@@ -13,16 +13,15 @@ import wedding from '../assets/slide/wedding.jpg';
 import zeyzey from '../assets/slide/zeyzey.jpg';
 
 const slides = [
-  { src: hardRock, title: "Live Band at Hard Rock Hotel, Hollywood Florida" },
-  { src: flamingo, title: "Flamingo Teather Brickel" },
-  { src: beachParty, title: "Beach Party at Florida Keys" },
-  { src: wedding, title: "Wedding at Cheeca Lodge Resort Islamorada Florida Keys" },
-  { src: foundrising, title: "Foundraising Fashion Event at Rusty Pelican at Key Biscayne Florida" },
-  { src: sound, title: "Saastr Tech Conference at Veza Sur, Wynwood Miami" },
-  { src: tech, title: "Sound & Lighting Production in Miami Event Venue" },
-  { src: vallenato, title: "Vallenato Fest at Magic 13 Brewery Miami FL" },
-  { src: bandLive, title: "Band Live" },
-  { src: zeyzey, title: "Live Band at Zey Zey Event Venue at Little River Miami Florida" }
+  { src: beachParty, title: "Wedding reception, Islamorada, Florida Keys." },
+  { src: hardRock, title: "Live band at Hard Rock Hotel, Hollywood, FL." },
+  { src: flamingo, title: "Flamingo Theater Brickell, Miami." },
+  { src: foundrising, title: "Fundraising fashion event at Rusty Pelican, Key Biscayne, FL." },
+  { src: sound, title: "Saastr Tech Conference, Wynwood Miami." },
+  { src: tech, title: "Saastr Tech Conference, Wynwood Miami." },
+  { src: vallenato, title: "Vallenato festival, Magic 13, Miami, FL." },
+  { src: bandLive, title: "Live band, Ft Lauderdale, FL." },
+  { src: zeyzey, title: "Experimento live at Zey Zey, Little River, Miami." }
 ];
 
 

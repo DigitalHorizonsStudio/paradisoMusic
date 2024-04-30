@@ -12,40 +12,41 @@ import magic from '../assets/partners/magic.png';
 import MIA from '../assets/partners/MIA.png';
 import Montys from '../assets/partners/Montys.png';
 import Rusty from '../assets/partners/Rusty.png';
-import RustyPelican from '../assets/partners/Rustypelican.png';
 import Vezasur from '../assets/partners/VezaSur.png';
+import Funky from '../assets/partners/funk.png';
+
 import { useTranslation } from 'react-i18next';
 
 const images = [
-    BallAndChain,
-    Baltimore,
-    Cheeca,
-    Dolphin,
-    Frail,
-    Grazianos,
-    HardRock,
-    Image,
-    IslandGrill,
+    Vezasur,
     magic,
-    MIA,
+    HardRock,
+    Grazianos,
+    Funky,
+    BallAndChain,
     Montys,
+    MIA,
+    IslandGrill,
+    Cheeca,
+    Baltimore,
+    Dolphin,
+    Image,
     Rusty,
-    RustyPelican,
-    Vezasur
+    Frail,
 ];
 
 const HomeSlider = () => {
     const { t } = useTranslation();
     return (
-        <div className=" mx-auto px-10 home-slider bg-[#110A0C] flex flex-col justify-center items-center mt-0">
-            <h1 className="text-3xl sm:text-5xl xl:text-6xl sm:mb-4 font-semibold text-white mt-6 lg:pt-6">{t('partners.title')}</h1>
+        <div className=" mx-auto px-10 bg-[#110A0C] flex flex-col justify-center items-center pt-10">
+            <h1 className="text-3xl sm:text-5xl xl:text-6xl font-semibold text-white">{t('partners.title')}</h1>
             <div className="container grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  xl:mb-15">
                 {images.map((image, index) => (
                     <div key={index} className="relative flex justify-center">
                         <img
                             src={image}
                             alt={`Client ${index + 1}`}
-                            className="object-contain rounded-lg mb-2 hover:opacity-40 p-16 transition-opacity duration-300"
+                            className="object-contain rounded-lg mb-2 hover:opacity-40 p-16 transition-opacity duration-300 "
                         />
                     </div>
                 ))}
