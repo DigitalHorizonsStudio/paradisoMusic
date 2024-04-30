@@ -51,27 +51,26 @@ const ServiceComponent = () => {
                       <li key={index} className="mb-2">{description}</li>
                     ))}
                   </ul>
-                <ul className="flex flex-col gap-3 justify-center text-xs">
-                              <li>
-                  <a class="flex flex-row items-center gap-2" href="mailto:info@paradisomusicpro.com">
-                    <img src={Viber} alt="Correo" class="w-5 h-5 mx-2" />
-                    <label>info@paradisomusicpro.com</label>
-                  </a>
-                </li>
-
-                <li className='xl:hidden'>
-                  <a class="phone-number flex flex-row items-center gap-2 hover:text-blue-500" href="tel:+13059700170">
-                    <img src={Correo} alt="Phone" class="w-5 h-5 mx-2" />
-                    <label>+1 (305) 970‑0170</label>
-                  </a>
-                </li>
-                <li className='xl:flex hidden'>
-                  <div class="phone-number flex flex-row items-center gap-2 hover:text-blue-500" href="tel:+13059700170">
-                    <img src={Correo} alt="Phone" class="w-5 h-5 mx-2" />
-                    <label>+1 (305) 970‑0170</label>
-                  </div>
-                </li>
-                    </ul>
+                  <ul className="flex flex-col gap-3 justify-center text-xs">
+                    <li>
+                      <a class="flex flex-row items-center gap-2" href="mailto:info@paradisomusicpro.com">
+                        <img src={Correo} alt="Correo" class="w-5 h-5 mx-2" />
+                        <label>info@paradisomusicpro.com</label>
+                      </a>
+                    </li>
+                    <li className='xl:hidden'>
+                      <a class="phone-number flex flex-row items-center gap-2 hover:text-blue-500" href="tel:+13059700170">
+                        <img src={Viber} alt="Phone" class="w-5 h-5 mx-2" />
+                        <label>+1 (305) 970‑0170</label>
+                      </a>
+                    </li>
+                    <li className='xl:flex hidden'>
+                      <div class="phone-number flex flex-row items-center gap-2 hover:text-blue-500" href="tel:+13059700170">
+                        <img src={Viber} alt="Phone" class="w-5 h-5 mx-2" />
+                        <label>+1 (305) 970‑0170</label>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
