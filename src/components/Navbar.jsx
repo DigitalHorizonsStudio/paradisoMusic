@@ -21,7 +21,7 @@ export const NavbarComponent = () => {
   };
 
   return (
-    <div className="mx-auto lg:px-20 px-8 sm:px-2" style={{backgroundColor: '#110A0C'}}>
+    <div className="mx-auto lg:px-20 px-8" style={{backgroundColor: '#110A0C'}}>
       <Navbar variant="dark" expand="lg" style={{ color: '#ffffff' }}>
         <Navbar.Brand as={Link} to="/">
           <img style={{ width: '70px', height: '70px' }} src={logo} alt="Paradiso Music Logo" />
@@ -33,7 +33,7 @@ export const NavbarComponent = () => {
                     <img src={Viber} alt="Viber" className="w-5 h-5 mx-2" />
                    
                 </a>
-            </li>
+          </li>
               <li>
                 <a href="https://www.instagram.com/paradisomusicpro">
                   <img src={Instagram} alt="Instagram" className="w-5 h-5 mx-2" />
@@ -56,11 +56,16 @@ export const NavbarComponent = () => {
             <div className="hidden lg:flex lg:flex-row lg:items-center lg:gap-3">
               <ul className="flex flex-row justify-center text-xs">
                 <li>
-                  <a className='flex flex-row items-center gap-2' href="mailto:info@paradisomusicpro.com">
+                  <div className='flex flex-row items-center gap-2'>
                     <img src={Viber} alt="Correo" className="w-5 h-5 mx-2" />
                     <label>+1 (305) 970‑0170</label>
-                  </a>
+                  </div>
                 </li>
+                {/* <li>
+                  <a href="https://www.instagram.com/paradisomusicpro">
+                    <img src={Instagram} alt="Instagram" className="w-5 h-5 mx-2" />
+                  </a>
+                </li> */}
               </ul>
             </div>
 
