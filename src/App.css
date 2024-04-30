@@ -6,3 +6,13 @@ body {
     overflow-x: hidden;
     background-color: transparent;
 }
+@media screen and (max-width: 768px) {
+    .cl-title{
+        color: #ffffff;
+    }
+    .bg-service {
+        background-color: #110A0C;
+        color: #ffffff
+    }
+    
+}
