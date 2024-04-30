@@ -17,6 +17,7 @@ export const Services = () => {
   const { t } = useTranslation();
 
   const handleServiceClick = (title) => {
+    window.scrollTo(0, 0);
     navigate(`/services/${title}`, { state: { title } });
   };
 
