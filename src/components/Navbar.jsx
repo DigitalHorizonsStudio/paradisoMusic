@@ -26,23 +26,19 @@ export const NavbarComponent = () => {
         <Navbar.Brand as={Link} to="/">
           <img style={{ width: '70px', height: '70px' }} src={logo} alt="Paradiso Music Logo" />
         </Navbar.Brand>
-        <div className="lg:hidden pl-16 flex flex-row items-center justify-center text-center">
+        <div className="lg:hidden pl-20 ml-5 flex flex-row items-center justify-center text-center">
             <ul className="flex flex-row justify-center text-xs">
-              <li>
-                <a href="https://wa.me/13059700170">
-                  <img src={Whatsapp} alt="WhatsApp" className="w-5 h-5 mx-2" />
+              <li className='xl:hidden'>
+                <a href="tel:+13059700170">
+                    <img src={Viber} alt="Viber" className="w-5 h-5 mx-2" />
+                   
                 </a>
-              </li>
+            </li>
               <li>
                 <a href="https://www.instagram.com/paradisomusicpro">
                   <img src={Instagram} alt="Instagram" className="w-5 h-5 mx-2" />
                 </a>
               </li>
-              <li>
-                <a href="tel:+13059700170">
-                    <img src={Viber} alt="Viber" className="w-5 h-5 mx-2" />
-                </a>
-            </li>
             </ul>
           </div>
 
@@ -60,20 +56,16 @@ export const NavbarComponent = () => {
             <div className="hidden lg:flex lg:flex-row lg:items-center lg:gap-3">
               <ul className="flex flex-row justify-center text-xs">
                 <li>
-                  <a href="https://wa.me/13059700170">
-                    <img src={Whatsapp} alt="WhatsApp" className="w-5 h-5 mx-2" />
+                  <a className='flex flex-row items-center gap-2' href="mailto:info@paradisomusicpro.com">
+                    <img src={Viber} alt="Correo" className="w-5 h-5 mx-2" />
+                    <label>+1 (305) 970‑0170</label>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="https://www.instagram.com/paradisomusicpro">
                     <img src={Instagram} alt="Instagram" className="w-5 h-5 mx-2" />
                   </a>
-                </li>
-                <li>
-                  <a href="mailto:info@paradisomusicpro.com">
-                    <img src={Viber} alt="Correo" className="w-5 h-5 mx-2" />
-                  </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 

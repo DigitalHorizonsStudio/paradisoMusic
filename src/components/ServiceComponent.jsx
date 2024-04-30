@@ -12,6 +12,10 @@ import stage from '../assets/stage.png';
 import video from '../assets/video.png';
 import audiovisual from '../assets/setAudio.png'
 import recording from '../assets/podcast1.png'
+import Whatsapp from '../assets/Footer/whatsapp.png';
+import Instagram from '../assets/Footer/instagram.png';
+import Correo from '../assets/Footer/correo.png';
+import Viber from '../assets/Footer/viber.png';
 
 const imageMap = {
   "Staging": stage,
@@ -30,6 +34,9 @@ const ServiceComponent = () => {
     const { title } = useParams(); 
     const image = imageMap[title]; 
     const descriptions = t(`services.descriptions.${title}`, { returnObjects: true });
+
+
+    
     return (
         <div className=" overflow-hidden">
           <NavbarComponent />
@@ -37,13 +44,34 @@ const ServiceComponent = () => {
             <div className="container mx-auto px-4 md:py-16">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <img className="mx-auto w-full max-w-full md:max-w-none min-h-96 rounded" src={image} alt={title} />
-                <div className="text-white">
+                <div className="text-white flex flex-col items-start gap-3">
                   <h2 className="text-xl lg:text-6xl mb-4 inline-block border-b-[1px] border-white font-montserrat">{t(`services.titles.${title}`)}</h2>
                   <ul>
                     {descriptions.map((description, index) => (
                       <li key={index} className="mb-2">{description}</li>
                     ))}
                   </ul>
+                <ul className="flex flex-col gap-3 justify-center text-xs">
+                              <li>
+                  <a class="flex flex-row items-center gap-2" href="mailto:info@paradisomusicpro.com">
+                    <img src={Viber} alt="Correo" class="w-5 h-5 mx-2" />
+                    <label>info@paradisomusicpro.com</label>
+                  </a>
+                </li>
+
+                <li className='xl:hidden'>
+                  <a class="phone-number flex flex-row items-center gap-2 hover:text-blue-500" href="tel:+13059700170">
+                    <img src={Correo} alt="Phone" class="w-5 h-5 mx-2" />
+                    <label>+1 (305) 970‑0170</label>
+                  </a>
+                </li>
+                <li className='xl:flex hidden'>
+                  <div class="phone-number flex flex-row items-center gap-2 hover:text-blue-500" href="tel:+13059700170">
+                    <img src={Correo} alt="Phone" class="w-5 h-5 mx-2" />
+                    <label>+1 (305) 970‑0170</label>
+                  </div>
+                </li>
+                    </ul>
                 </div>
               </div>
             </div>
