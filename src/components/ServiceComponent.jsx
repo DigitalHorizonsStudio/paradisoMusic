@@ -5,13 +5,13 @@ import { useParams } from 'react-router-dom';
 import { NavbarComponent } from './Navbar';
 import Footer from './Footer';
 import enterteinment from '../assets/enterteinment.png';
-import rental from '../assets/rental.png';
-import lighting from '../assets/lighting.png';
-import liveSound from '../assets/liveSound.png';
-import stage from '../assets/stage.png';
-import video from '../assets/video.png';
-import audiovisual from '../assets/setAudio.png'
-import recording from '../assets/podcast1.png'
+import rental from '../assets/servicesComponent/rental.png';
+import lighting from '../assets/servicesComponent/lighting.png';
+import liveSound from '../assets/servicesComponent/livesound.png';
+import stage from '../assets/servicesComponent/staging.png';
+import video from '../assets/servicesComponent/video.png';
+import audiovisual from '../assets/servicesComponent/audiovisual.png'
+import recording from '../assets/servicesComponent/socialpodcast.png'
 import Whatsapp from '../assets/Footer/whatsapp.png';
 import Instagram from '../assets/Footer/instagram.png';
 import Correo from '../assets/Footer/correo.png';
@@ -51,26 +51,27 @@ const ServiceComponent = () => {
                       <li key={index} className="mb-2">{description}</li>
                     ))}
                   </ul>
-                  <ul className="flex flex-col gap-3 justify-center text-xs">
-                    <li>
-                      <a class="flex flex-row items-center gap-2" href="mailto:info@paradisomusicpro.com">
-                        <img src={Correo} alt="Correo" class="w-5 h-5 mx-2" />
-                        <label>info@paradisomusicpro.com</label>
-                      </a>
-                    </li>
-                    <li className='xl:hidden'>
-                      <a class="phone-number flex flex-row items-center gap-2 hover:text-blue-500" href="tel:+13059700170">
-                        <img src={Viber} alt="Phone" class="w-5 h-5 mx-2" />
-                        <label>+1 (305) 970‑0170</label>
-                      </a>
-                    </li>
-                    <li className='xl:flex hidden'>
-                      <div class="phone-number flex flex-row items-center gap-2 hover:text-blue-500" href="tel:+13059700170">
-                        <img src={Viber} alt="Phone" class="w-5 h-5 mx-2" />
-                        <label>+1 (305) 970‑0170</label>
-                      </div>
-                    </li>
-                  </ul>
+                <ul className="flex flex-col gap-3 justify-center text-xs">
+                              <li>
+                  <a class="flex flex-row items-center gap-2" href="mailto:info@paradisomusicpro.com">
+                    <img src={Correo} alt="Correo" class="w-5 h-5 mx-2" />
+                    <label>info@paradisomusicpro.com</label>
+                  </a>
+                </li>
+
+                <li className='xl:hidden'>
+                  <a class="phone-number flex flex-row items-center gap-2 hover:text-blue-500" href="tel:+13059700170">
+                    <img src={Viber} alt="Phone" class="w-5 h-5 mx-2" />
+                    <label>+1 (305) 970‑0170</label>
+                  </a>
+                </li>
+                <li className='xl:flex hidden'>
+                  <div class="phone-number flex flex-row items-center gap-2 hover:text-blue-500" href="tel:+13059700170">
+                    <img src={Viber} alt="Phone" class="w-5 h-5 mx-2" />
+                    <label>+1 (305) 970‑0170</label>
+                  </div>
+                </li>
+                    </ul>
                 </div>
               </div>
             </div>
