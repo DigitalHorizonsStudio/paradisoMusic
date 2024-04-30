@@ -79,9 +79,9 @@ export const NavbarComponent = () => {
 
             {/* Menú de idiomas */}
             <div className="flex flex-row items-center justify-center text-center bc-red xl:m-2 xl:px-2 text-black rounded-lg xl:py-2 sm:flex-col">
-              <span className=" lg:flex mr-2 text-white">{t('nav.idioma')}: </span>
-              <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px', backgroundColor: i18n.language === 'en' ? '#ff0080' : 'transparent', padding: '8px', borderRadius: '4px' }} onClick={() => changeLanguage('en')}>ENG {i18n.language === 'ENG'}</Nav.Link>
-              <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px', backgroundColor: i18n.language === 'es' ? '#ff0080' : 'transparent', padding: '8px', borderRadius: '4px' }} onClick={() => changeLanguage('es')}>ESP {i18n.language === 'ESP'}</Nav.Link>
+              <span className="lg:flex mr-2 text-white" style={{fontSize: '12px'}}>{t('nav.idioma')}: </span>
+              <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '12px', backgroundColor: i18n.language === 'en' ? '#ff0080' : 'transparent', padding: '8px', borderRadius: '4px' }} onClick={() => changeLanguage('en')}>ENG {i18n.language === 'ENG'}</Nav.Link>
+              <Nav.Link href="#link" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '12px', backgroundColor: i18n.language === 'es' ? '#ff0080' : 'transparent', padding: '8px', borderRadius: '4px' }} onClick={() => changeLanguage('es')}>ESP {i18n.language === 'ESP'}</Nav.Link>
             </div>
 
               {/* Iconos de redes sociales */}
