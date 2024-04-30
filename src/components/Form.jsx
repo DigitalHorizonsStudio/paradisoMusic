@@ -54,7 +54,7 @@ export const Form = () => {
     e.preventDefault();
     setLoading(true);
     emailjs
-      .sendForm('service_hzsgp6l', 'template_sewlpmn', form.current, {
+      .sendForm('service_e0v5lxb', 'template_egqvz22', form.current, {
         publicKey: 'YjKPkpMXSw2Jjnf2Z'
       })
       .then(

@@ -12,8 +12,9 @@ import magic from '../assets/partners/magic.png';
 import MIA from '../assets/partners/MIA.png';
 import Montys from '../assets/partners/Montys.png';
 import Rusty from '../assets/partners/Rusty.png';
-import RustyPelican from '../assets/partners/Rustypelican.png';
 import Vezasur from '../assets/partners/VezaSur.png';
+import Funky from '../assets/partners/funk.png';
+
 import { useTranslation } from 'react-i18next';
 
 const images = [
@@ -21,6 +22,7 @@ const images = [
     magic,
     HardRock,
     Grazianos,
+    Funky,
     BallAndChain,
     Montys,
     MIA,
@@ -31,7 +33,6 @@ const images = [
     Image,
     Rusty,
     Frail,
-    RustyPelican,
 ];
 
 const HomeSlider = () => {
