@@ -26,24 +26,24 @@ export const NavbarComponent = () => {
         <Navbar.Brand as={Link} to="/">
           <img style={{ width: '70px', height: '70px' }} src={logo} alt="Paradiso Music Logo" />
         </Navbar.Brand>
-        <div className="lg:hidden pl-20 ml-5 flex flex-row items-center justify-center text-center">
+        <div className="lg:hidden gap-3 pl-20 ml-5 flex flex-row items-center justify-center text-center">
             <ul className="flex flex-row justify-center text-xs">
               <li className='xl:hidden'>
                 <a href="tel:+13059700170">
                     <img src={Viber} alt="Viber" className="w-5 h-5 mx-2" />
                    
                 </a>
-            </li>
+          </li>
               <li>
                 <a href="https://www.instagram.com/paradisomusicpro">
                   <img src={Instagram} alt="Instagram" className="w-5 h-5 mx-2" />
                 </a>
               </li>
             </ul>
-          </div>
 
         <Navbar.Toggle onClick={handleToggle} aria-controls="basic-navbar-nav" color='#ffffff' />
-        
+        </div>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/services" style={{ color: '#ffffff', fontFamily: 'Montserrat', fontSize: '15px' }}>{t('nav.services')}</Nav.Link>
@@ -56,10 +56,10 @@ export const NavbarComponent = () => {
             <div className="hidden lg:flex lg:flex-row lg:items-center lg:gap-3">
               <ul className="flex flex-row justify-center text-xs">
                 <li>
-                  <a className='flex flex-row items-center gap-2' href="mailto:info@paradisomusicpro.com">
+                  <div className='flex flex-row items-center gap-2'>
                     <img src={Viber} alt="Correo" className="w-5 h-5 mx-2" />
                     <label>+1 (305) 970‑0170</label>
-                  </a>
+                  </div>
                 </li>
                 {/* <li>
                   <a href="https://www.instagram.com/paradisomusicpro">

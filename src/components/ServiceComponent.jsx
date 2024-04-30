@@ -12,8 +12,6 @@ import stage from '../assets/servicesComponent/staging.png';
 import video from '../assets/servicesComponent/video.png';
 import audiovisual from '../assets/servicesComponent/audiovisual.png'
 import recording from '../assets/servicesComponent/socialpodcast.png'
-import Whatsapp from '../assets/Footer/whatsapp.png';
-import Instagram from '../assets/Footer/instagram.png';
 import Correo from '../assets/Footer/correo.png';
 import Viber from '../assets/Footer/viber.png';
 
