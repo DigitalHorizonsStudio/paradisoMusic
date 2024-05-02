@@ -26,7 +26,7 @@ export const NavbarComponent = () => {
         <Navbar.Brand as={Link} to="/">
           <img style={{ width: '70px', height: '70px' }} src={logo} alt="Paradiso Music Logo" />
         </Navbar.Brand>
-        <div className="lg:hidden gap-3 pl-20 ml-5 flex flex-row items-center justify-center text-center">
+        <div className="lg:hidden gap-3 ml-5 flex flex-row items-center justify-center text-center">
             <ul className="flex flex-row justify-center text-xs">
               <li className='xl:hidden'>
                 <a href="tel:+13059700170">

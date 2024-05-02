@@ -17,54 +17,66 @@
 
 
       "titles": {
-        "Staging": "Staging",
-        "Entertainment": "Entertainment",
-        "Video": "Video",
-        "Lighting": "Lighting",
-        "EquipmentRental": "Equipment Rental",
-        "Live Sound": "Live Sound",
-        "Recording": "Recording",
-        "Audiovisual": "Audiovisual"
+        "staging": "Staging",
+        "entertainment": "Entertainment",
+        "video": "Video",
+        "lighting": "Lighting",
+        "equipmentrental": "E. Rental",
+        "live sound": "Live Sound",
+        "recording": "Recording",
+        "audiovisual": "Audiovisual"
       },
-      "descriptions": {
-        "Staging": [
-          "Staging designs that captivate and inspire.",
-          "From sleek and simple to grand and elaborate. From backyard shows to pool parties and everything in between. Our expert team can help you cover all your needs."
-        ],
-        "Entertainment": [
-          "Connecting you with the best entertainment for your event!",
-          "Performers, dancers, solo artists, full band productions, we book top talent to bring your vision to life and leave your audience in awe."
-        ],
-        "Video": [
-          "Movie night at the park? Wedding reception? DJ bloc party?",
-          "Dynamic visuals come alive with our LED screens and projectors, high-resolution displays and crisp image projections."
-        ],
-        "Lighting": [
-          "Stage and Event Lighting Design",
-          "Transforming spaces with captivating lighting designs, elevating the ambiance and energy of staging designs that captivate and inspire."
-        ],
-        "EquipmentRental": [
-          "Amplify your event's impact with our top-quality audio, video and lighting equipment rentals.",
-          "From microphones to video LED screens. Let us guide you in finding what your event needs, reliable and professional solutions for every occasion."
-        ],
-        "Live Sound": [
-          "Unleash the Power of Sound Experience Unforgettable Events with Paradiso Music's Top-Notch Engineering Team.",
-          "Live Sound Reinforcement.",
-          "Sound Design and Mixing.",
-          "Live Recording Mixing and Mastering."
-        ],
-        "Recording": [
-          "Dedicated to developing and fine-tune artists skills.",
-          "We offer top-of-the-line equipment and a team of dedicated engineers.",
-          "Services include recording, mixing, and mastering for any musical genre."
-        ],
-        "Audiovisual": [
-          "Our audiovisual studios produce engaging audio and video content for various platforms.",
-          "From recording and editing to post-production for podcast, social media, TV and film.",
-          "Our expert production team ensures a polished and engaging audiovisual experience that resonates with your audience."
-        ]
+      "titleServices": {
+        "staging": "Staging",
+        "entertainment": "Entertainment",
+        "video": "Video",
+        "lighting": "Lighting",
+        "equipmentRental": "Equipment Rental",
+        "live sound": "Live Sound",
+        "recording": "Recording",
+        "audiovisual": "Audiovisual"
+      },
+      
+        "descriptions": {
+          "staging": [
+            "Staging designs that captivate and inspire.",
+            "From sleek and simple to grand and elaborate. From backyard shows to pool parties and everything in between. Our expert team can help you cover all your needs."
+          ],
+          "entertainment": [
+            "Connecting you with the best entertainment for your event!",
+            "Performers, dancers, solo artists, full band productions, we book top talent to bring your vision to life and leave your audience in awe."
+          ],
+          "video": [
+            "Movie night at the park? Wedding reception? DJ bloc party?",
+            "Dynamic visuals come alive with our LED screens and projectors, high-resolution displays and crisp image projections."
+          ],
+          "lighting": [
+            "Stage and Event Lighting Design",
+            "Transforming spaces with captivating lighting designs, elevating the ambiance and energy of staging designs that captivate and inspire."
+          ],
+          "equipmentRental": [
+            "Amplify your event's impact with our top-quality audio, video and lighting equipment rentals.",
+            "From microphones to video LED screens. Let us guide you in finding what your event needs, reliable and professional solutions for every occasion."
+          ],
+          "live sound": [
+            "Unleash the Power of Sound Experience Unforgettable Events with Paradiso Music's Top-Notch Engineering Team.",
+            "Live Sound Reinforcement.",
+            "Sound Design and Mixing.",
+            "Live Recording Mixing and Mastering."
+          ],
+          "recording": [
+            "Dedicated to developing and fine-tune artists skills.",
+            "We offer top-of-the-line equipment and a team of dedicated engineers.",
+            "Services include recording, mixing, and mastering for any musical genre."
+          ],
+          "audiovisual": [
+            "Our audiovisual studios produce engaging audio and video content for various platforms.",
+            "From recording and editing to post-production for podcast, social media, TV and film.",
+            "Our expert production team ensures a polished and engaging audiovisual experience that resonates with your audience."
+          ]
+        }
       }
-    },
+      ,
     "partners": {
       "title": "Some of our clients"
     },
