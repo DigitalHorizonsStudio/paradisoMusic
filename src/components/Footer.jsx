@@ -24,23 +24,21 @@ const Footer = () => {
                             <li><Link to="/contactus" className="text-gray-300 hover:text-white">{t('nav.contact')}</Link></li>
                         </ul>
                     </div>
-                    <div className="text-white lg:ml-5 flex-wrap sm:pt-5 "  >
+                    <div className="text-white lg:ml-5 flex-wrap sm:pt-5">
                         <h3 className="text-m mb-3">{t('nav.services')}</h3>
                         <div className='flex justify-start gap-3'>
-                        <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start text-start">
-                            <li><Link to="/services/Staging" className="text-gray-300 hover:text-white">{t('services.titles.Staging')}</Link></li>
-                            <li><Link to="/services/Video" className="text-gray-300 hover:text-white">{t('services.titles.Video')}</Link></li>
-                            <li><Link to="/services/Lighting" className="text-gray-300 hover:text-white">{t('services.titles.Lighting')}</Link></li>
-                            <li><Link to="/services/Audiovisual" className="text-gray-300 hover:text-white">{t('services.titles.Audiovisual')}</Link></li>
-                         
-                        </ul>
-                        <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start w-20 text-start">
-                            <li><Link to="/services/EquipmentRental" className="text-gray-300 w-100 hover:text-white">{t('services.titles.EquipmentRental')}</Link></li>
-                        <li><Link to="/services/Live%20Sound" className="text-gray-300 hover:text-white">{t('services.titles.Live Sound')}</Link></li>
-                        <li><Link to="/services/Entertainment" className="text-gray-300 hover:text-white">{t('services.titles.Entertainment')}</Link></li>
-                            <li><Link to="/services/Recording" className="text-gray-300 hover:text-white">{t('services.titles.Recording')}</Link></li>
-
-                        </ul>
+                            <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start text-start">
+                                <li><Link to="/services/staging" className="text-gray-300 hover:text-white">{t('services.titles.staging')}</Link></li>
+                                <li><Link to="/services/video" className="text-gray-300 hover:text-white">{t('services.titles.video')}</Link></li>
+                                <li><Link to="/services/lighting" className="text-gray-300 hover:text-white">{t('services.titles.lighting')}</Link></li>
+                                <li><Link to="/services/audiovisual" className="text-gray-300 hover:text-white">{t('services.titles.audiovisual')}</Link></li>
+                            </ul>
+                            <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start w-20 text-start">
+                                <li><Link to="/services/equipmentRental" className="text-gray-300 w-100 hover:text-white">{t('services.titles.equipmentrental')}</Link></li>
+                                <li><Link to="/services/live sound" className="text-gray-300 hover:text-white">{t('services.titles.live sound')}</Link></li>
+                                <li><Link to="/services/entertainment" className="text-gray-300 hover:text-white">{t('services.titles.entertainment')}</Link></li>
+                                <li><Link to="/services/recording" className="text-gray-300 hover:text-white">{t('services.titles.recording')}</Link></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

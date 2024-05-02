@@ -48,7 +48,7 @@ export const EventsCarousel = () => {
       <Carousel style={{backgroundColor: '#110A0C'}} data-bs-theme="dark" fade={true}>
         {slides.map((slide, index) => (
           <Carousel.Item key={index}>
-            <div className="evts-carousel">
+            <div className="evts-carousel py-10">
               <img
                 className="evts-carousel"
                 src={slide.src}

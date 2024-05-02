@@ -16,14 +16,14 @@ import Correo from '../assets/Footer/correo.png';
 import Viber from '../assets/Footer/viber.png';
 
 const imageMap = {
-  "Staging": stage,
-  "Entertainment": enterteinment,
-  "Video": video,
-  "Lighting": lighting,
-  "EquipmentRental": rental,
-  "Live Sound": liveSound,
-  "Recording": recording,
-  "Audiovisual": audiovisual
+  "staging": stage,
+  "entertainment": enterteinment,
+  "video": video,
+  "lighting": lighting,
+  "equipmentRental": rental,
+  "live sound": liveSound,
+  "recording": recording,
+  "audiovisual": audiovisual
 };
 
 
@@ -36,14 +36,21 @@ const ServiceComponent = () => {
 
     
     return (
-        <div className=" overflow-hidden">
+        <div className=" overflow-hidden h-max">
           <NavbarComponent />
           <div className="flex-1 bg-[#110A0C] border-b border-zinc-700 py-4 " >
-            <div className="container mx-auto px-4 md:py-16">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <img className="mx-auto md:max-w-none max-h-96 rounded " src={image} alt={title} />
+            <div className="container mx-auto py-16">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <img className="mx-auto md:max-w-none rounded " src={image} alt={title} style={{
+                  height: '40rem',
+                  width: '35rem',
+                  objectFit: 'cover',
+                  objectPosition: 'center',
+                  borderRadius: '10px',
+                  maxHeight: '30rem'
+                }} />
                 <div className="text-white flex flex-col items-start">
-                  <h2 className="text-xl lg:text-6xl mb-4 inline-block border-b-[1px] border-white font-montserrat">{t(`services.titles.${title}`)}</h2>
+                  <h2 className="text-xl pt-10 lg:text-6xl mb-4 inline-block border-b-[1px] border-white font-montserrat">{t(`services.titleServices.${title}`)}</h2>
                   <ul>
                     {descriptions.map((description, index) => (
                       <li key={index} className="mb-2">{description}</li>

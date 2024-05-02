@@ -16,54 +16,63 @@
     "recording": "Estudio de Grabación",
 
     "titles": {
-      "Staging": "Escenificación",
-      "Entertainment": "Entretenimiento",
-      "Video": "Video",
-      "Lighting": "Iluminación",
-      "EquipmentRental": "Alquiler de Equipos",
-      "Live Sound": "Sonido en Vivo",
-      "Recording": "Grabación",
-      "Audiovisual": "Audiovisual"
+      "staging": "Escenificación",
+      "entertainment": "Entretenimiento",
+      "video": "Video",
+      "lighting": "Iluminación",
+      "equipmentrental": "Alquiler de Equipos",
+      "live sound": "Sonido en Vivo",
+      "recording": "Grabación",
+      "audiovisual": "Audiovisual"
+    },
+    "titleServices": {
+      "staging": "Escenificación",
+      "entertainment": "Entretenimiento",
+      "video": "Video",
+      "lighting": "Iluminación",
+      "equipmentrental": "Alquiler de Equipos",
+      "live sound": "Sonido en Vivo",
+      "recording": "Grabación",
+      "audiovisual": "Audiovisual"
     },
     "descriptions": {
-      "Staging": [
+      "staging": [
         "Diseños de escenificación que cautivan e inspiran.",
         "Desde elegantes y simples hasta grandiosos y elaborados. Desde espectáculos de patio trasero hasta fiestas en la piscina y todo lo demás. Nuestro equipo experto puede ayudarte a cubrir todas tus necesidades."
       ],
-      "Entertainment": [
+      "entertainment": [
         "¡Conéctate con el mejor entretenimiento para tu evento!",
         "Artistas, bailarines, artistas solistas, producciones de bandas completas, reservamos talento de primer nivel para dar vida a tu visión y dejar a tu audiencia asombrada."
       ],
-      "Video": [
+      "video": [
         "¿Noche de cine en el parque? ¿Recepción de bodas? ¿Fiesta de DJ?",
         "Las imágenes dinámicas cobran vida con nuestras pantallas LED y proyectores, pantallas de alta resolución y proyecciones de imagen nítida."
       ],
-      "Lighting": [
+      "lighting": [
         "Diseño de iluminación escénica y de eventos",
         "Transformando espacios con diseños de iluminación cautivadores, elevando el ambiente y la energía de los diseños de escenificación que cautivan e inspiran."
       ],
-      "EquipmentRental": [
+      "equipmentRental": [
         "Amplifica el impacto de tu evento con nuestros alquileres de equipos de audio, video e iluminación de alta calidad.",
         "Desde micrófonos hasta pantallas de video LED. Permítenos guiarte para encontrar lo que necesita tu evento, soluciones confiables y profesionales para cada ocasión."
       ],
-      "Live Sound": [
+      "live sound": [
         "Libera el poder del sonido. Experimenta eventos inolvidables con el equipo de ingeniería de primer nivel de Paradiso Music.",
         "Reforzamiento del sonido en vivo.",
         "Diseño y mezcla de sonido.",
         "Mezcla y masterización de grabaciones en vivo."
       ],
-      "Recording": [
+      "recording": [
         "Dedicado a desarrollar y perfeccionar las habilidades de los artistas.",
         "Ofrecemos equipos de última generación y un equipo de ingenieros dedicados.",
         "Los servicios incluyen grabación, mezcla y masterización para cualquier género musical."
       ],
-      "Audiovisual": [
+      "audiovisual": [
         "Nuestros estudios audiovisuales producen contenido de audio y video atractivo para diversas plataformas.",
         "Desde la grabación y edición hasta la posproducción para podcasts, redes sociales, televisión y cine.",
         "Nuestro equipo de producción experto garantiza una experiencia audiovisual pulida y atractiva que resuena con tu audiencia."
       ]
-    }
-  },
+    }},
   "partners": {
     "title": "Nuestros clientes"
   },
