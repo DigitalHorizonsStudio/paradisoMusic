@@ -5,8 +5,6 @@ import withReactContent from 'sweetalert2-react-content';
 import { useTranslation } from 'react-i18next';
 
 
-const env = process.env;
-
 const MySwal = withReactContent(Swal);
 
 export const Form = () => {
@@ -57,8 +55,8 @@ export const Form = () => {
     e.preventDefault();
     setLoading(true);
     emailjs
-      .sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current, {
-        publicKey: env.PUBLIC_ID
+      .sendForm("service_e0v5lxb", "template_iic1fsl", form.current, {
+        publicKey:"3StfnyunOMDKHxJt_"
       })
       .then(
         () => {

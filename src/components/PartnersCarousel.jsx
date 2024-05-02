@@ -39,7 +39,7 @@ export const CarouselPartners = () => {
     const { t } = useTranslation();
     return (
       <div className='bg-[#110A0C]'>
-          <h1 className=" text-4xl sm:text-5xl sm:mb-4 pt-4 font-semibold text-white mt-3 text-center ">{t('partners.title')}</h1>
+          <h1 className=" text-4xl sm:text-5xl sm:mb-4 pt-4 font-semibold text-white md:mt-3 text-center ">{t('partners.title')}</h1>
       <Carousel data-bs-theme="dark">
         {images.map((image, index) => (
             <Carousel.Item key={index}>
