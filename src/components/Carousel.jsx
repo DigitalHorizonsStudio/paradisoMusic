@@ -34,6 +34,7 @@ export const CarouselPhotos = () => {
             <img
               className="img-carousel"
               src={slide.src}
+              loading='lazy'
               alt={`Slide ${index + 1}`}
             />
           </div>

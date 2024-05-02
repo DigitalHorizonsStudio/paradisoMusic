@@ -34,7 +34,7 @@ const Footer = () => {
                             <li><Link to="/services/Audiovisual" className="text-gray-300 hover:text-white">{t('services.titles.Audiovisual')}</Link></li>
                          
                         </ul>
-                        <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start w-40 text-start">
+                        <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start w-20 text-start">
                             <li><Link to="/services/EquipmentRental" className="text-gray-300 w-100 hover:text-white">{t('services.titles.EquipmentRental')}</Link></li>
                         <li><Link to="/services/Live%20Sound" className="text-gray-300 hover:text-white">{t('services.titles.Live Sound')}</Link></li>
                         <li><Link to="/services/Entertainment" className="text-gray-300 hover:text-white">{t('services.titles.Entertainment')}</Link></li>
@@ -44,8 +44,8 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-center mt-4 lg:mt-0 mr-4">
-                    <ul className="flex flex-row justify-center text-xs">
+                <div className="flex flex-col justify-center items-center pt-5 mr-4">
+                    <ul className="flex flex-row justify-center text-xs pt-1">
                         <li>
                             <a href="https://wa.me/13059700170">
                                 <img src={Whatsapp} alt="WhatsApp" className="w-4 h-4 mx-2" />

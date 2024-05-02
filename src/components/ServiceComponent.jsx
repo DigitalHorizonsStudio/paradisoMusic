@@ -41,16 +41,16 @@ const ServiceComponent = () => {
           <div className="flex-1 bg-[#110A0C] border-b border-zinc-700 py-4 " >
             <div className="container mx-auto px-4 md:py-16">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <img className="mx-auto w-full max-w-full md:max-w-none min-h-96 rounded" src={image} alt={title} />
-                <div className="text-white flex flex-col items-start gap-3">
+                <img className="mx-auto md:max-w-none max-h-96 rounded " src={image} alt={title} />
+                <div className="text-white flex flex-col items-start">
                   <h2 className="text-xl lg:text-6xl mb-4 inline-block border-b-[1px] border-white font-montserrat">{t(`services.titles.${title}`)}</h2>
                   <ul>
                     {descriptions.map((description, index) => (
                       <li key={index} className="mb-2">{description}</li>
                     ))}
                   </ul>
-                <ul className="flex flex-col gap-3 justify-center text-xs">
-                              <li>
+                <ul className="flex flex-col gap-3 justify-center text-xs py-5">
+                  <li>
                   <a class="flex flex-row items-center gap-2" href="mailto:info@paradisomusicpro.com">
                     <img src={Correo} alt="Correo" class="w-5 h-5 mx-2" />
                     <label>info@paradisomusicpro.com</label>

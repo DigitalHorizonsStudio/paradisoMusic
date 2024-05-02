@@ -41,30 +41,19 @@ const slides = [
 
 export const EventsCarousel = () => {
 
-  const [imagesLoaded, setImagesLoaded] = useState(0);
   const totalImages = slides.length;
-
-  const handleImageLoad = () => {
-    setImagesLoaded(prevState => prevState + 1);
-  };
 
   return (
     <div>
-      {imagesLoaded < totalImages && (
-        <div className="loader-spinner">
-        <Spinner animation="border" role="status" className="custom-spinner">
-        </Spinner>
-        </div>
-      )}
-      <Carousel data-bs-theme="dark" fade={true}>
+      <Carousel style={{backgroundColor: '#110A0C'}} data-bs-theme="dark" fade={true}>
         {slides.map((slide, index) => (
           <Carousel.Item key={index}>
-            <div className="img-container">
+            <div className="evts-carousel">
               <img
-                className="img-carousel"
+                className="evts-carousel"
                 src={slide.src}
+                loading='lazy'
                 alt={`Slide ${index + 1}`}
-                onLoad={handleImageLoad}
               />
             </div>
             <Carousel.Caption>

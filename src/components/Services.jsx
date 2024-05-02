@@ -34,20 +34,20 @@ export const Services = () => {
         <ServiceLink image={stage} title={t('services.titles.Staging')} onClick={() => handleServiceClick("Staging")} />
         <ServiceLink image={lighting} title={t('services.titles.Lighting')} onClick={() => handleServiceClick("Lighting")} />
         <ServiceLink image={video} title={t('services.titles.Video')} onClick={() => handleServiceClick("Video")} />
-        <ServiceLink image={rental} title={t('services.titles.EquipmentRental')} onClick={() => handleServiceClick("EquipmentRental")} />
+        <ServiceLink image={rental} title={t('form.equipmentRental')} onClick={() => handleServiceClick("EquipmentRental")} />
         <ServiceLink image={enterteinment} title={t('services.titles.Entertainment')} onClick={() => handleServiceClick("Entertainment")} />
       </div>
       <div className="w-full ">
         <div className='relative flex justify-center sm:pt-0 lg:pt-4'>
           <button onClick={() => handleServiceClick("Audiovisual")} className="relative">
-            <img src={Recording} alt={'Recording'} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem", width: "72rem", objectFit: "cover" }} />
+            <img src={Recording} alt={'Recording'} loading='lazy' className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem", width: "72rem", objectFit: "cover" }} />
             <h2 className="absolute inset-0 flex items-center justify-center text-xl font-bold text-center bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">{t('services.audiovisual')}</h2>
             <span className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full shadow-lg">{t('services.new')}</span>
           </button>
         </div>
-        <div className='relative flex justify-center lg: mt-2 mt-8 mb-0 pb-4 '>
+        <div className='relative flex justify-center lg: mt-2 mt-8 mb-0 pt-4 pb-20 '>
           <button onClick={() => handleServiceClick("Recording")} className="relative">
-            <img src={Audiovisual} alt={'Audiovisual'} className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem", width: "72rem", objectFit: "cover" }} />
+            <img src={Audiovisual} alt={'Audiovisual'} loading='lazy' className=" w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none', height: "10rem", width: "72rem", objectFit: "cover" }} />
             <h2 className="absolute inset-0 flex items-center justify-center text-xl font-bold text-center bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">{t('services.recording')}</h2>
             <span className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full shadow-lg">{t('services.new')}</span>
           </button>
@@ -61,7 +61,7 @@ const ServiceLink = ({ image, title, onClick }) => {
   return (
     <div className="relative">
       <button onClick={onClick}>
-        <img src={image} alt={title} className="mobile-styles w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none'}} />
+        <img src={image} alt={title} loading='lazy' className="mobile-styles w-full object-cover rounded-lg mb-2 transition-transform duration-300 transform hover:scale-95" style={{ boxShadow: 'none'}} />
         <h2 className="opacity-80 absolute mt-8 inset-0 flex items-start justify-center text-xl font-bold text-center bg-opacity-50 text-white rounded-lg uppercase transition-opacity duration-300 hover:bg-opacity-0">{title}</h2>
       </button>
     </div>
