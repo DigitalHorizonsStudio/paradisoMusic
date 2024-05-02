@@ -8,13 +8,11 @@ import { ServicesPage } from './components/ServicesPage';
 import { Events } from './components/Events';
 import { Suspense } from 'react';
 
-const baseUrl = 'https://paradisomusicpro.com/' || 'http://localhost:5173';
-
 
 function App() {
   return (
     <Suspense fallback="Loading translations">
-    <Router basename={baseUrl}>
+    <Router>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/services/:title" element={
