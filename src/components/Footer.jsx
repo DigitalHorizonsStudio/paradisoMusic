@@ -10,12 +10,12 @@ import { useTranslation } from 'react-i18next';
 const Footer = () => {
     const { t } = useTranslation();
     return (
-        <footer className="bg-[#110A0C] mx-auto px-20 py-10 flex flex-col xl:flex-row items-center justify-between">
+        <footer className="bg-[#110A0C] mx-auto px-20 py-10 flex flex-col lg:flex-row items-center justify-between">
                 <div className="flex justify-center">
                     <Link to="/">
                     <img src={ParadisoLogo} alt="Logo" className="w-35 h-35 ml-0 mr-8 d-none d-sm-block" />
                     </Link>
-                    <div className="text-white xl:ml-8 xl:mt-5">
+                    <div className="text-white lg:ml-8 lg:mt-5">
                         <h3 className="text-m mb-3 ">{t(`nav.Links`)}</h3>
                         <ul className="list-none text-xs w-20 space-y-2 text-start">
                             <li><Link to="/aboutus" className="text-gray-300 hover:text-white">{t('nav.about')}</Link></li>
@@ -24,7 +24,7 @@ const Footer = () => {
                             <li><Link to="/contactus" className="text-gray-300 hover:text-white">{t('nav.contact')}</Link></li>
                         </ul>
                     </div>
-                    <div className="text-white xl:ml-5 flex-wrap sm:pt-5 "  >
+                    <div className="text-white lg:ml-5 flex-wrap sm:pt-5 "  >
                         <h3 className="text-m mb-3">{t('nav.services')}</h3>
                         <div className='flex justify-start gap-3'>
                         <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start text-start">
@@ -44,7 +44,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-center mt-4 xl:mt-0 mr-4">
+                <div className="flex flex-col justify-center items-center mt-4 lg:mt-0 mr-4">
                     <ul className="flex flex-row justify-center text-xs">
                         <li>
                             <a href="https://wa.me/13059700170">
@@ -59,7 +59,7 @@ const Footer = () => {
                             </a>
                         </li>
                     </ul>
-                    <div className="text-white text-xs space-y-1 text-center mt-4 xl:mt-0">
+                    <div className="text-white text-xs space-y-1 text-center mt-4 lg:mt-0">
                     <p>PARADISO MUSIC LLC.</p>
                     <p>3565 NW 60th Street Miami, Florida 33142</p>
                 </div>

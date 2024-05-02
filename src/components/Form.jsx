@@ -4,6 +4,7 @@ import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import { useTranslation } from 'react-i18next';
 
+
 const MySwal = withReactContent(Swal);
 
 export const Form = () => {
@@ -54,8 +55,8 @@ export const Form = () => {
     e.preventDefault();
     setLoading(true);
     emailjs
-      .sendForm('service_e0v5lxb', 'template_egqvz22', form.current, {
-        publicKey: 'YjKPkpMXSw2Jjnf2Z'
+      .sendForm("service_e0v5lxb", "template_iic1fsl", form.current, {
+        publicKey:"3StfnyunOMDKHxJt_"
       })
       .then(
         () => {
@@ -73,15 +74,21 @@ export const Form = () => {
             message: ''
           });
           resetValidation();
+          setLoading(false);
         },
         (error) => {
           console.log('FAILED...', error.text);
+          MySwal.fire({
+            icon: 'error',
+            title: <p>{t('errorMessage')}</p>,
+            showConfirmButton: true,
+            confirmButtonText: t('form.ok')
+          });
+          setLoading(false);
         }
-      )
-      .finally(() => {
-        setLoading(false);
-      });
+      );
   };
+  
 
   return (
     <div className='mx-auto lg:px-20 px-2' style={{ backgroundColor: 'white' }}>
