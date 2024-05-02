@@ -41,7 +41,7 @@ const ServiceComponent = () => {
           <div className="flex-1 bg-[#110A0C] border-b border-zinc-700 py-4 " >
             <div className="container mx-auto py-16">
               <div className="grid grid-cols-1 md:grid-cols-2">
-                <img className="mx-auto md:max-w-none rounded " src={image} alt={title} style={{
+                <img className="mx-auto md:max-w-none rounded "  loading='lazy' src={image} alt={title} style={{
                   height: '40rem',
                   width: '35rem',
                   objectFit: 'cover',
