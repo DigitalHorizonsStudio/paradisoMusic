@@ -15,9 +15,8 @@ import '../components/Services.css'
 export const Services = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
-
+  
   const handleServiceClick = (title) => {
-    window.scrollTo(0, 0);
     navigate(`/services/${title}`, { state: { title } });
   };
 

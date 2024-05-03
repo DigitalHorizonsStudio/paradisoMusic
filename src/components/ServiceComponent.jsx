@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
@@ -32,7 +32,6 @@ const ServiceComponent = () => {
     const { title } = useParams(); 
     const image = imageMap[title]; 
     const descriptions = t(`services.descriptions.${title}`, { returnObjects: true });
-
 
     
     return (

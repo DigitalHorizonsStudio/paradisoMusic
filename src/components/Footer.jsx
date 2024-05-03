@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
     const { t } = useTranslation();
+
     return (
         <footer className="bg-[#110A0C] mx-auto px-20 py-10 flex flex-col lg:flex-row items-center justify-between">
                 <div className="flex justify-center gap-0 sm:gap-2">
