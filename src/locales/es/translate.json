@@ -2,7 +2,7 @@
   "nav": {
     "about": "Nosotros",
     "services": "Servicios",
-    "events": "Eventos",
+    "events": "Galeria eventos",
     "contact": "Contactanos",
     "Links": "Enlaces",
     "idioma": "Idioma"
@@ -20,8 +20,8 @@
       "entertainment": "Entretenimiento",
       "video": "Video",
       "lighting": "Iluminación",
-      "equipmentrental": "Alquiler de Equipos",
-      "live sound": "Sonido en Vivo",
+      "equipmentrental": "A. Equipos",
+      "live sound": "Sonido",
       "recording": "Grabación",
       "audiovisual": "Audiovisual"
     },

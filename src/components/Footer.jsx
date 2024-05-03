@@ -25,8 +25,8 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="text-white lg:ml-5 flex-wrap sm:pt-5">
-                        <h3 className="text-m mb-3">{t('nav.services')}</h3>
-                        <div className='flex justify-start gap-3'>
+                        <h3 className="text-m mb-3 ml-2">{t('nav.services')}</h3>
+                        <div className='flex justify-start gap-3 ml-2'>
                             <ul className="list-none text-xs space-y-2 flex flex-col flex-wrap h-50 justify-start text-start">
                                 <li><Link to="/services/staging" className="text-gray-300 hover:text-white">{t('services.titles.staging')}</Link></li>
                                 <li><Link to="/services/video" className="text-gray-300 hover:text-white">{t('services.titles.video')}</Link></li>

@@ -17,8 +17,8 @@ const slides = [
   { src: hardRock, title: "Live band at Hard Rock Hotel, Hollywood, FL." },
   { src: flamingo, title: "Flamingo Theater Brickell, Miami." },
   { src: foundrising, title: "Fundraising fashion event at Rusty Pelican, Key Biscayne, FL." },
-  { src: sound, title: "Saastr Tech Conference, Wynwood Miami." },
-  { src: tech, title: "Saastr Tech Conference, Wynwood Miami." },
+  { src: sound, title: "Live Band, Miami, Florida." },
+  { src: tech, title: "Live Band, Miami, Florida." },
   { src: vallenato, title: "Vallenato festival, Magic 13, Miami, FL." },
   { src: bandLive, title: "Live band, Ft Lauderdale, FL." },
   { src: zeyzey, title: "Experimento live at Zey Zey, Little River, Miami." }
