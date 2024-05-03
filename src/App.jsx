@@ -7,12 +7,14 @@ import { AboutUs } from './components/AboutUs';
 import { ServicesPage } from './components/ServicesPage';
 import { Events } from './components/Events';
 import { Suspense } from 'react';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
   return (
     <Suspense fallback="Loading translations">
     <Router>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/services/:title" element={
