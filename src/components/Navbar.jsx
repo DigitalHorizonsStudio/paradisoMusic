@@ -33,10 +33,10 @@ export const NavbarComponent = () => {
                     <img src={Viber} alt="Viber" className="w-5 h-5 mx-2" />
                    
                 </a>
-          </li>
+              </li>
               <li>
-                <a href="https://www.instagram.com/paradisomusicpro">
-                  <img src={Instagram} alt="Instagram" className="w-5 h-5 mx-2" />
+                <a href="https://wa.me/13059700170">
+                    <img src={Whatsapp} alt="WhatsApp" className="w-5 h-5 mx-2" />
                 </a>
               </li>
             </ul>

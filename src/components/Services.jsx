@@ -30,7 +30,7 @@ export const Services = () => {
      
       <div className=" grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:pt-6 sm:gap-0 lg:pb-6 sm:pb-0 lg:gap-10 ">
 
-        <ServiceLink image={liveSound} title={t('services.titles.live sound')} onClick={() => handleServiceClick("live sound")} />
+        <ServiceLink image={liveSound} title={t('form.liveSound')} onClick={() => handleServiceClick("live sound")} />
         <ServiceLink image={stage} title={t('services.titles.staging')} onClick={() => handleServiceClick("staging")} />
         <ServiceLink image={lighting} title={t('services.titles.lighting')} onClick={() => handleServiceClick("lighting")} />
         <ServiceLink image={video} title={t('services.titles.video')} onClick={() => handleServiceClick("video")} />
