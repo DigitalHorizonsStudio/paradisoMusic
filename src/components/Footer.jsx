@@ -11,7 +11,7 @@ const Footer = () => {
     const { t } = useTranslation();
     return (
         <footer className="bg-[#110A0C] mx-auto px-20 py-10 flex flex-col lg:flex-row items-center justify-between">
-                <div className="flex justify-center">
+                <div className="flex justify-center gap-0 sm:gap-2">
                     <Link to="/">
                     <img src={ParadisoLogo} alt="Logo" className="w-35 h-35 ml-0 mr-8 d-none d-sm-block" />
                     </Link>
