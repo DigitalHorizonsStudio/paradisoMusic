@@ -94,8 +94,8 @@
       },
 
       "form": {
-        "title": " Let the event",
-        "productionExperts": "production experts",
+        "title": " Let the event production",
+        "productionExperts": "experts",
         "eventToLife": "bring your event to life!",
         "name": "Name",
         "email": "Email",
