@@ -11,7 +11,7 @@ import liveSound from '../assets/servicesComponent/livesound.png';
 import stage from '../assets/servicesComponent/staging.png';
 import video from '../assets/servicesComponent/video.png';
 import audiovisual from '../assets/servicesComponent/audiovisual.png'
-import recording from '../assets/servicesComponent/socialpodcast.png'
+import recording from '../assets/servicesComponent/recording.jpg';
 import Correo from '../assets/Footer/correo.png';
 import Viber from '../assets/Footer/viber.png';
 

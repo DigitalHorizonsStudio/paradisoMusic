@@ -7,8 +7,8 @@ import lighting from '../assets/lighting.png';
 import liveSound from '../assets/liveSound.png';
 import stage from '../assets/stage.png';
 import video from '../assets/video.png';
-import Audiovisual from '../assets/podcast1.png'
-import Recording from '../assets/setAudio.png'
+import Audiovisual from '../assets/STUDIO-PRODUCTION.jpg';
+import Recording from '../assets/setAudio.png';
 
 import '../components/Services.css'
 

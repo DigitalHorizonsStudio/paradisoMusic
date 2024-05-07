@@ -19,6 +19,23 @@ import beachceremony from '../assets/events-slide/BEACH_CEREMONY.jpg';
 import stageside from '../assets/events-slide/STAGE-SIDE-ISLAMORADA-.jpg';
 import weddingmorada from '../assets/events-slide/WEDDING_ISLAMORADA.jpg';
 import weddingstage from '../assets/events-slide/WEDDING_STAGE.jpg';
+import beachW from '../assets/events-slide/BEACH-WEDDING.jpg';
+import confetiB from '../assets/events-slide/CONFETTI-BAND.jpg';
+import confetiZ from '../assets/events-slide/CONFETTI-ZEKE.jpg';
+import crew from '../assets/events-slide/CREW.jpg';
+import desfileFundacion from '../assets/events-slide/DESFILE-FUNDACION-SUR.jpg';
+import grazianos from '../assets/events-slide/GRAZIANOS-STREET-PARTY.jpg';
+import lesli from '../assets/events-slide/LESLIE-CARTAYA.jpg';
+import live1 from '../assets/events-slide/live.jpg';
+import live2 from '../assets/events-slide/live2.jpg';
+import paradisoB from '../assets/events-slide/PARADISO-BACK.jpg';
+import pulga from '../assets/events-slide/PULGA-MULATO.jpg';
+import rasta from '../assets/events-slide/RASTA-FEST.jpg';
+import socialM from '../assets/events-slide/SOCIAL-MONDAY-PODCAST.jpg';
+import stageC from '../assets/events-slide/STAGE-COVER.jpg';
+import studioP from '../assets/events-slide/STUDIO-PRODUCTION.jpg';
+import xperimento from '../assets/events-slide/XPERIMENTO-ZEY-ZEY.jpg';
+
 
 const slides = [
   { src: first, title: "First Dance Islamorada" },
@@ -37,6 +54,22 @@ const slides = [
   { src: inter, title: "Inter Miami Stadium Solsis" },
   { src: interStadium, title: "Inter Miami Stadium" },
   { src: interstadium2, title: "Inter Stadium" },
+  { src: beachW, title: "Beach Wedding" },
+  { src: confetiB, title: "Confetti Band" },
+  { src: confetiZ, title: "Confetti Zeke" },
+  { src: crew, title: "Crew" },
+  { src: desfileFundacion, title: "Desfile Fundacion Sur" },
+  { src: grazianos, title: "Grazianos Street Party" },
+  { src: lesli, title: "Leslie Cartaya" },
+  { src: live1, title: "Live Performance" },
+  { src: live2, title: "Live Performance" },
+  { src: paradisoB, title: "Paradiso Back" },
+  { src: pulga, title: "Pulga & Mulato" },
+  { src: rasta, title: "Rasta Fest" },
+  { src: socialM, title: "Social Monday Podcast" },
+  { src: stageC, title: "Stage Cover" },
+  { src: studioP, title: "Studio Production" },
+  { src: xperimento, title: "Xperimento Zey Zey" },
 ];
 
 export const EventsCarousel = () => {
