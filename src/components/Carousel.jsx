@@ -11,6 +11,9 @@ import tech from '../assets/slide/tech.jpg';
 import vallenato from '../assets/slide/vallenato.jpg';
 import wedding from '../assets/slide/wedding.jpg';
 import zeyzey from '../assets/slide/zeyzey.jpg';
+import bayKings from '../assets/slide/bayKings.jpg';
+import event from '../assets/slide/event.jpg';
+import privateConcert from '../assets/slide/privateConcert.jpg';
 
 const slides = [
   { src: beachParty, title: "Wedding reception, Islamorada, Florida Keys." },
@@ -18,10 +21,13 @@ const slides = [
   { src: flamingo, title: "Flamingo Theater Brickell, Miami." },
   { src: foundrising, title: "Fundraising fashion event at Rusty Pelican, Key Biscayne, FL." },
   { src: sound, title: "Live Band, Miami, Florida." },
-  { src: tech, title: "Live Band, Miami, Florida." },
+  { src: tech, title: "Saastr tech conference at Veza Sur Wynwood, Miami." },
   { src: vallenato, title: "Vallenato festival, Magic 13, Miami, FL." },
   { src: bandLive, title: "Live band, Ft Lauderdale, FL." },
-  { src: zeyzey, title: "Experimento live at Zey Zey, Little River, Miami." }
+  { src: zeyzey, title: "Experimento live at Zey Zey, Little River, Miami." },
+  { src: bayKings, title: "Bay Kings Band at JW Marriott Aventura, Florida." },
+  { src: event, title: "Event production at JW Marriott Aventura, Florida." },
+  { src: privateConcert, title: "Private Concert at Lowes Hotel Miami Beach, Florida." },
 ];
 
 
